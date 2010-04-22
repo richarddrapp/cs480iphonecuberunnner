@@ -1,0 +1,399 @@
+TOpenGLES_TEST
+v7
+r0
+t293665303.136638
+cCheck dependencies
+cProcessInfoPlistFile "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/Info.plist" OpenGLES_TEST-Info.plist
+cCpResource build/Debug-iphonesimulator/OpenGLES_TEST.app/Shader.fsh Shaders/Shader.fsh
+cCpResource build/Debug-iphonesimulator/OpenGLES_TEST.app/Shader.vsh Shaders/Shader.vsh
+cCompileXIB "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/MainWindow.xib"
+cProcessPCH /var/folders/8r/8rnGgNh9GmaMqgUxLDHBcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenGLES_TEST_Prefix-dlooqirnhhgfoafsofpqzduylxfu/OpenGLES_TEST_Prefix.pch.gch OpenGLES_TEST_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/main.o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/OpenGLES_TESTAppDelegate.o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/OpenGLES_TESTAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/EAGLView.o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/EAGLView.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/ES1Renderer.o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES1Renderer.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/ES2Renderer.o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES2Renderer.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/OpenGLES_TEST" normal i386
+cGenerateDSYMFile "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app.dSYM" "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/OpenGLES_TEST"
+cTouch "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app"
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk
+c000000004B69B45C00000000000000EE
+t1265218652
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B2B4DC8000000000027E880
+t1261129160
+s2615424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B2B4DAE0000000000001355
+t1261129134
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h
+c000000004B2B5307000000000000094F
+t1261130503
+s2383
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGLDrawable.h
+c000000004B2B53070000000000000A61
+t1261130503
+s2657
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h
+c000000004B2B53070000000000009369
+t1261130503
+s37737
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h
+c000000004B2B53070000000000002A42
+t1261130503
+s10818
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h
+c000000004B2B530700000000000082AD
+t1261130503
+s33453
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/glext.h
+c000000004B2B53070000000000001617
+t1261130503
+s5655
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004B2B532D000000000001F8E0
+t1261130541
+s129248
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004B2B537F000000000000007D
+t1261130623
+s125
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004B2B540C00000000000E5890
+t1261130764
+s940176
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004B2B61620000000000000788
+t1261134178
+s1928
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B2B62B500000000016721E0
+t1261134517
+s23536096
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/Availability.h
+c000000004B2B4EE200000000000019F9
+t1261129442
+s6649
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/EAGLView.h
+c000000004BD0033E00000000000004E3
+t1271923518
+s1251
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+i"ESRenderer.h"
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/EAGLView.m
+c000000004BD0033E000000000000101C
+t1271923518
+s4124
+i"EAGLView.h"
+i"ES1Renderer.h"
+i"ES2Renderer.h"
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES1Renderer.h
+c000000004BD0033E000000000000026F
+t1271923518
+s623
+i"ESRenderer.h"
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES1Renderer.m
+c000000004BD0033E0000000000000FA9
+t1271923518
+s4009
+i"ES1Renderer.h"
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES2Renderer.h
+c000000004BD0033E0000000000000285
+t1271923518
+s645
+i"ESRenderer.h"
+i<OpenGLES/ES2/gl.h>
+i<OpenGLES/ES2/glext.h>
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES2Renderer.m
+c000000004BD0033E0000000000002210
+t1271923518
+s8720
+i"ES2Renderer.h"
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ESRenderer.h
+c000000004BD0033E0000000000000154
+t1271923518
+s340
+i<QuartzCore/QuartzCore.h>
+i<OpenGLES/EAGL.h>
+i<OpenGLES/EAGLDrawable.h>
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/OpenGLES_TESTAppDelegate.h
+c000000004BD0033E00000000000001B9
+t1271923518
+s441
+i<UIKit/UIKit.h>
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/OpenGLES_TESTAppDelegate.m
+c000000004BD0033E0000000000000349
+t1271923518
+s841
+i"OpenGLES_TESTAppDelegate.h"
+i"EAGLView.h"
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/MainWindow.xib
+c000000004BD0033E0000000000002788
+t1271923518
+s10120
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/OpenGLES_TEST_Prefix.pch
+c000000004BD0033E0000000000000144
+t1271923518
+s324
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Shaders/Shader.fsh
+c000000004BD0033E00000000000000DF
+t1271923518
+s223
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Shaders/Shader.vsh
+c000000004BD0033E0000000000000165
+t1271923518
+s357
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app
+t1271923567
+s272
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app.dSYM
+t1271923567
+s102
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/Info.plist
+t1271923564
+s644
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/MainWindow.nib
+t1271923565
+s1581
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/OpenGLES_TEST
+t1271923567
+s35664
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/PkgInfo
+t1271923564
+s8
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/Shader.fsh
+t1271923564
+s223
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/Shader.vsh
+t1271923564
+s357
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/EAGLView.o
+t1271923566
+s19340
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/ES1Renderer.o
+t1271923566
+s14924
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/ES2Renderer.o
+t1271923566
+s21892
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/OpenGLES_TEST.LinkFileList
+c000000004BD0036C0000000000000319
+t1271923564
+s793
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/OpenGLES_TESTAppDelegate.o
+t1271923566
+s20516
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/main.o
+t1271923566
+s5984
+
+N/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/main.m
+c000000004BD0033E000000000000016E
+t1271923518
+s366
+i<UIKit/UIKit.h>
+
+N/var/folders/8r/8rnGgNh9GmaMqgUxLDHBcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenGLES_TEST_Prefix-dlooqirnhhgfoafsofpqzduylxfu/OpenGLES_TEST_Prefix.pch.gch
+t1271923566
+s13018576
+
+NOpenGLES_TEST-Info.plist
+c000000004BD0033E00000000000003B4
+t1271923518
+s948
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies293665303#293665303#0(0"0(0#1#0"28992373579448432#0"0#
+
+CCompileC build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/EAGLView.o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/EAGLView.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s293616366.335122
+e293616366.486078
+r1
+xCompileC
+xbuild/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/EAGLView.o
+x/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/EAGLView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/EAGLView.m293616366#293616366#0(0"0(0#0#74"/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/EAGLView.m4300911832#2212"    cd "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-generated-files.hmap" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-own-target-headers.hmap" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-all-target-headers.hmap" -iquote "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-project-headers.hmap" "-F/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/include" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/DerivedSources/i386" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/DerivedSources" -include /var/folders/8r/8rnGgNh9GmaMqgUxLDHBcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenGLES_TEST_Prefix-dlooqirnhhgfoafsofpqzduylxfu/OpenGLES_TEST_Prefix.pch -c "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/EAGLView.m" -o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/EAGLView.o"0#
+
+CCompileC build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/ES1Renderer.o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES1Renderer.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s293616366.341521
+e293616366.481771
+r1
+xCompileC
+xbuild/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/ES1Renderer.o
+x/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES1Renderer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES1Renderer.m293616366#293616366#0(0"0(0#0#77"/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES1Renderer.m4300911832#2218"    cd "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-generated-files.hmap" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-own-target-headers.hmap" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-all-target-headers.hmap" -iquote "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-project-headers.hmap" "-F/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/include" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/DerivedSources/i386" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/DerivedSources" -include /var/folders/8r/8rnGgNh9GmaMqgUxLDHBcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenGLES_TEST_Prefix-dlooqirnhhgfoafsofpqzduylxfu/OpenGLES_TEST_Prefix.pch -c "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES1Renderer.m" -o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/ES1Renderer.o"0#
+
+CCompileC build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/ES2Renderer.o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES2Renderer.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s293616366.481884
+e293616366.567989
+r1
+xCompileC
+xbuild/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/ES2Renderer.o
+x/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES2Renderer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES2Renderer.m293616366#293616366#0(0"0(0#0#77"/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES2Renderer.m4300911832#2218"    cd "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-generated-files.hmap" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-own-target-headers.hmap" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-all-target-headers.hmap" -iquote "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-project-headers.hmap" "-F/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/include" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/DerivedSources/i386" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/DerivedSources" -include /var/folders/8r/8rnGgNh9GmaMqgUxLDHBcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenGLES_TEST_Prefix-dlooqirnhhgfoafsofpqzduylxfu/OpenGLES_TEST_Prefix.pch -c "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/ES2Renderer.m" -o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/ES2Renderer.o"0#
+
+CCompileC build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/OpenGLES_TESTAppDelegate.o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/OpenGLES_TESTAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s293616366.099529
+e293616366.341409
+r1
+xCompileC
+xbuild/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/OpenGLES_TESTAppDelegate.o
+x/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/OpenGLES_TESTAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@98"Compile /Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/OpenGLES_TESTAppDelegate.m293616366#293616366#0(0"0(0#0#90"/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/OpenGLES_TESTAppDelegate.m4300911832#2244"    cd "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-generated-files.hmap" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-own-target-headers.hmap" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-all-target-headers.hmap" -iquote "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-project-headers.hmap" "-F/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/include" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/DerivedSources/i386" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/DerivedSources" -include /var/folders/8r/8rnGgNh9GmaMqgUxLDHBcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenGLES_TEST_Prefix-dlooqirnhhgfoafsofpqzduylxfu/OpenGLES_TEST_Prefix.pch -c "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Classes/OpenGLES_TESTAppDelegate.m" -o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/OpenGLES_TESTAppDelegate.o"0#
+
+CCompileC build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/main.o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s293616366.097587
+e293616366.334890
+r1
+xCompileC
+xbuild/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/main.o
+x/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/main.m293616366#293616366#0(0"0(0#0#62"/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/main.m4300911832#2196"    cd "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-generated-files.hmap" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-own-target-headers.hmap" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-all-target-headers.hmap" -iquote "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-project-headers.hmap" "-F/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/include" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/DerivedSources/i386" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/DerivedSources" -include /var/folders/8r/8rnGgNh9GmaMqgUxLDHBcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenGLES_TEST_Prefix-dlooqirnhhgfoafsofpqzduylxfu/OpenGLES_TEST_Prefix.pch -c "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/main.m" -o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/main.o"0#
+
+CCompileXIB "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/MainWindow.xib"
+s293616364.817830
+e293616365.224032
+r1
+xCompileXIB
+x/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/MainWindow.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@25"CompileXIB MainWindow.xib293616364#293616365#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#70"/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/MainWindow.xib4300911832#545"    cd "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/MainWindow.nib" "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/MainWindow.xib"0#
+
+CCpResource build/Debug-iphonesimulator/OpenGLES_TEST.app/Shader.fsh Shaders/Shader.fsh
+s293616364.814555
+e293616364.867010
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/OpenGLES_TEST.app/Shader.fsh
+xShaders/Shader.fsh
+lSLF07#2@23"Copy Shaders/Shader.fsh293616364#293616364#0(0"0(0#0#74"/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Shaders/Shader.fsh4300911832#525"    cd "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Shaders/Shader.fsh" "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app"0#
+
+CCpResource build/Debug-iphonesimulator/OpenGLES_TEST.app/Shader.vsh Shaders/Shader.vsh
+s293616364.816855
+e293616364.870312
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/OpenGLES_TEST.app/Shader.vsh
+xShaders/Shader.vsh
+lSLF07#2@23"Copy Shaders/Shader.vsh293616364#293616364#0(0"0(0#0#74"/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Shaders/Shader.vsh4300911832#525"    cd "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/Shaders/Shader.vsh" "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app"0#
+
+CGenerateDSYMFile "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app.dSYM" "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/OpenGLES_TEST"
+s293616367.112657
+e293616367.209444
+r1
+xGenerateDSYMFile
+x/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app.dSYM
+x/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/OpenGLES_TEST
+lSLF07#2@127"GenerateDSYMFile build/Debug-iphonesimulator/OpenGLES_TEST.app.dSYM build/Debug-iphonesimulator/OpenGLES_TEST.app/OpenGLES_TEST293616367#293616367#0(0"0(0#0#115"/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/OpenGLES_TEST4300911832#458"    cd "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/OpenGLES_TEST" -o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app.dSYM"0#
+
+CLd "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/OpenGLES_TEST" normal i386
+s293616366.568098
+e293616367.112517
+r1
+xLd
+x/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/OpenGLES_TEST
+xnormal
+xi386
+lSLF07#2@120"Link /Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/OpenGLES_TEST293616366#293616367#0(0"0(0#0#0"4300911832#1007"    cd "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk "-L/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator" "-F/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator" -filelist "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/Objects-normal/i386/OpenGLES_TEST.LinkFileList" -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework OpenGLES -framework QuartzCore -o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/OpenGLES_TEST"0#
+
+CProcessInfoPlistFile "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/Info.plist" OpenGLES_TEST-Info.plist
+s293616364.782512
+e293616364.814395
+r1
+xProcessInfoPlistFile
+x/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/Info.plist
+xOpenGLES_TEST-Info.plist
+lSLF07#2@32"Process OpenGLES_TEST-Info.plist293616364#293616364#0(0"0(0#0#80"/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/OpenGLES_TEST-Info.plist8531299975054651392#554"    cd "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility OpenGLES_TEST-Info.plist -genpkginfo "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app/Info.plist"0#
+
+CProcessPCH /var/folders/8r/8rnGgNh9GmaMqgUxLDHBcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenGLES_TEST_Prefix-dlooqirnhhgfoafsofpqzduylxfu/OpenGLES_TEST_Prefix.pch.gch OpenGLES_TEST_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s293616365.224201
+e293616366.097313
+r1
+xProcessPCH
+x/var/folders/8r/8rnGgNh9GmaMqgUxLDHBcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenGLES_TEST_Prefix-dlooqirnhhgfoafsofpqzduylxfu/OpenGLES_TEST_Prefix.pch.gch
+xOpenGLES_TEST_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile OpenGLES_TEST_Prefix.pch293616365#293616366#0(0"0(0#0#80"/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/OpenGLES_TEST_Prefix.pch4300911832#2063"    cd "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-generated-files.hmap" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-own-target-headers.hmap" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-all-target-headers.hmap" -iquote "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/OpenGLES_TEST-project-headers.hmap" "-F/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/include" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/DerivedSources/i386" "-I/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/OpenGLES_TEST.build/Debug-iphonesimulator/OpenGLES_TEST.build/DerivedSources" -c "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/OpenGLES_TEST_Prefix.pch" -o /var/folders/8r/8rnGgNh9GmaMqgUxLDHBcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenGLES_TEST_Prefix-dlooqirnhhgfoafsofpqzduylxfu/OpenGLES_TEST_Prefix.pch.gch0#
+
+CTouch "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app"
+s293616367.209546
+e293616367.250223
+r1
+xTouch
+x/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app
+lSLF07#2@107"Touch /Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app293616367#293616367#0(0"0(0#0#0"4300911832#322"    cd "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/greglieberman/Documents/iPhone Dev/OpenGLES_TEST/build/Debug-iphonesimulator/OpenGLES_TEST.app"0#
+
