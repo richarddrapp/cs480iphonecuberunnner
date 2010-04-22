@@ -85,7 +85,7 @@ enum {
     glViewport(0, 0, backingWidth, backingHeight);
 
 
-    glClearColor(0.0f, 0.0f, 1.0f, 1.0f);
+    glClearColor(1.0f, 0.5f, 1.5f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
     // Use shader program
