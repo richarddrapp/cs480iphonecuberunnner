@@ -76,6 +76,9 @@ EAGL surface has an alpha channel.
 		
 		accel = calloc(3, sizeof(UIAccelerationValue));
 		
+		//temp cube
+		tempCube = [[Cube alloc] init];
+		
 		[self setupView];
 	}
 	
@@ -144,7 +147,9 @@ EAGL surface has an alpha channel.
 		
 	//Setup model view matrix
 	glLoadIdentity();
-	glTranslatef(0.0, -0.1, -1.0);
+	glTranslatef(0.0, -0.1, -8.0);
+	//for the teapot
+	//glTranslatef(0.0, -0.1, -1.0);
 	glScalef(kTeapotScale, kTeapotScale, kTeapotScale);
 	//glScalef(3.0, 2.0, 2.0);
 		
@@ -192,33 +197,13 @@ EAGL surface has an alpha channel.
 		spinY += 0.25;
 	}
 #endif
-		
+		/*
 	// Draw teapot. The new_teapot_indicies array is an RLE (run-length encoded) version of the teapot_indices array in teapot.h
 	for(int i = 0; i < num_teapot_indices; i += new_teapot_indicies[i] + 1)
 	{
 		glDrawElements(GL_TRIANGLE_STRIP, new_teapot_indicies[i], GL_UNSIGNED_SHORT, &new_teapot_indicies[i+1]);
-	}
-	/*
-	//draw cube
-	glVertexPointer(3, GL_FLOAT, 0, cubeVertices);	
-    glEnableClientState(GL_VERTEX_ARRAY);
-    
-	//set a color before drawing
-    glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
-    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
-    glDrawArrays(GL_TRIANGLE_STRIP, 4, 4);
-    
-    glColor4f(0.0f, 1.0f, 0.0f, 1.0f);
-    glDrawArrays(GL_TRIANGLE_STRIP, 8, 4);
-    glDrawArrays(GL_TRIANGLE_STRIP, 12, 4);
-    
-    glColor4f(0.0f, 0.0f, 1.0f, 1.0f);
-    glDrawArrays(GL_TRIANGLE_STRIP, 16, 4);
-    glDrawArrays(GL_TRIANGLE_STRIP, 20, 4);
-	
-	//disable to prevent messing up other code elsewhere
-	glDisableClientState(GL_VERTEX_ARRAY);
-	 */	
+	}*/
+	[tempCube drawCube];
  
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
