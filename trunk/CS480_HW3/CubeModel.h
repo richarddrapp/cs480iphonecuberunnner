@@ -1,13 +1,12 @@
 //
-//  Cube.h
-//  GLGravity
+//  CubeModel.h
 //
 //  Created by Greg Lieberman on 4/25/10.
 //  Copyright 2010 Greg Lieberman. All rights reserved.
 //
 
-#ifndef CUBE_H
-#define CUBE_H
+#ifndef CUBE_MODEL_H
+#define CUBE_MODEL_H
 
 //const int num_teapot_indices = 2781;
 //const int num_teapot_vertices = 1364;

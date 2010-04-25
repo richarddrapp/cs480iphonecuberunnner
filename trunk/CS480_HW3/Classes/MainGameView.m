@@ -13,7 +13,7 @@ EAGL surface has an alpha channel.
 
 #import "MainGameView.h"
 #import "teapot.h"
-#import "Cube.h"
+#import "CubeModel.h"
 
 // CONSTANTS
 #define kTeapotScale				3.0
