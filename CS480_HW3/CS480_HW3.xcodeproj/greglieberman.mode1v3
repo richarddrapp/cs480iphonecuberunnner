@@ -269,13 +269,13 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>5867ACB81184460B009C0C9A</string>
 								<string>1C37FABC05509CD000000102</string>
+								<string>E2644B35053B69B200211256</string>
 								<string>1CC0EA4004350EF90041110B</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>12</integer>
-									<integer>1</integer>
+									<integer>2</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -319,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CS480_HW3AppDelegate.m</string>
+								<string>MainGameView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>CS480_HW3AppDelegate.m</string>
+										<string>MainGameView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>5867AD0111844C06009C0C9A</string>
+										<string>5867AD7D118459E8009C0C9A</string>
 										<key>history</key>
 										<array>
 											<string>58A5CBC51181160B00D6BB25</string>
@@ -339,11 +339,15 @@
 											<string>5867ACF911844C06009C0C9A</string>
 											<string>5867ACFA11844C06009C0C9A</string>
 											<string>5867ACFB11844C06009C0C9A</string>
-											<string>5867ACFC11844C06009C0C9A</string>
-											<string>5867ACFD11844C06009C0C9A</string>
-											<string>5867ACFE11844C06009C0C9A</string>
-											<string>5867ACFF11844C06009C0C9A</string>
-											<string>5867AD0011844C06009C0C9A</string>
+											<string>5867AD41118454BA009C0C9A</string>
+											<string>5867AD42118454BA009C0C9A</string>
+											<string>5867AD44118454BA009C0C9A</string>
+											<string>5867AD45118454BA009C0C9A</string>
+											<string>5867AD511184554D009C0C9A</string>
+											<string>5867AD6411845786009C0C9A</string>
+											<string>5867AD75118459D4009C0C9A</string>
+											<string>5867AD7B118459E8009C0C9A</string>
+											<string>5867AD7C118459E8009C0C9A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -570,7 +574,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CS480_HW3AppDelegate.m</string>
+								<string>Cube.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -579,7 +583,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {500, 218}}</string>
 								<key>RubberWindowFrame</key>
-								<string>347 291 500 500 0 0 1440 878 </string>
+								<string>447 322 500 500 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -605,7 +609,7 @@
 								<key>Frame</key>
 								<string>{{0, 223}, {500, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>347 291 500 500 0 0 1440 878 </string>
+								<string>447 322 500 500 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -637,7 +641,7 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>347 291 500 500 0 0 1440 878 </string>
+			<string>447 322 500 500 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>587EC6D911810FAB00803532</string>
 			<key>WindowToolIsVisible</key>
@@ -883,6 +887,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

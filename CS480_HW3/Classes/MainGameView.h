@@ -12,6 +12,7 @@ EAGL surface has an alpha channel.
 #import <OpenGLES/EAGL.h>
 #import <OpenGLES/ES1/gl.h>
 #import <OpenGLES/ES1/glext.h>
+#import "Cube.h"
 
 @interface MainGameView : UIView
 {
@@ -40,6 +41,9 @@ EAGL surface has an alpha channel.
 	
 	//this value gets set automatically by the application delegate
 	UIAccelerationValue	*accel;
+	
+	//TEMPORARY
+	Cube *tempCube;
 }
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
