@@ -43,7 +43,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* CS480_HW3_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CS480_HW3_Prefix.pch; sourceTree = "<group>"; };
 		5867ACCB11844659009C0C9A /* teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = teapot.h; path = ../teapot.h; sourceTree = "<group>"; };
-		5867ACCC11844659009C0C9A /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cube.h; path = ../Cube.h; sourceTree = "<group>"; };
+		5867ACCC11844659009C0C9A /* CubeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CubeModel.h; path = ../CubeModel.h; sourceTree = "<group>"; };
 		5867ACCE1184490B009C0C9A /* MainGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainGameView.h; sourceTree = "<group>"; };
 		5867ACCF1184490B009C0C9A /* MainGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainGameView.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* CS480_HW3-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CS480_HW3-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -67,15 +67,9 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2514C26D10084DB100A42282 /* ES1Renderer.h */,
-				2514C26E10084DB100A42282 /* ES1Renderer.m */,
-				2514C26F10084DB100A42282 /* ES2Renderer.h */,
-				2514C27010084DB100A42282 /* ES2Renderer.m */,
-				2514C27110084DB100A42282 /* ESRenderer.h */,
-				28FD14FC0DC6FC130079059D /* EAGLView.h */,
+				5867AD1411844D63009C0C9A /* Unused Classes */,
 				5867ACCE1184490B009C0C9A /* MainGameView.h */,
 				5867ACCF1184490B009C0C9A /* MainGameView.m */,
-				28FD14FD0DC6FC130079059D /* EAGLView.m */,
 				1D3623240D0F684500981E51 /* CS480_HW3AppDelegate.h */,
 				1D3623250D0F684500981E51 /* CS480_HW3AppDelegate.m */,
 			);
@@ -146,10 +140,24 @@
 			isa = PBXGroup;
 			children = (
 				5867ACCB11844659009C0C9A /* teapot.h */,
-				5867ACCC11844659009C0C9A /* Cube.h */,
+				5867ACCC11844659009C0C9A /* CubeModel.h */,
 			);
 			name = Models;
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		5867AD1411844D63009C0C9A /* Unused Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2514C26D10084DB100A42282 /* ES1Renderer.h */,
+				2514C26E10084DB100A42282 /* ES1Renderer.m */,
+				2514C26F10084DB100A42282 /* ES2Renderer.h */,
+				2514C27010084DB100A42282 /* ES2Renderer.m */,
+				2514C27110084DB100A42282 /* ESRenderer.h */,
+				28FD14FC0DC6FC130079059D /* EAGLView.h */,
+				28FD14FD0DC6FC130079059D /* EAGLView.m */,
+			);
+			name = "Unused Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

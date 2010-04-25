@@ -54,8 +54,7 @@
 	accel[2] = acceleration.z * kFilteringFactor + accel[2] * (1.0 - kFilteringFactor);
 	
 	//Update the accelerometer values for the view
-	NSLog(@"NOT SETTING ACCEL YET");
-	//[glView setAccel:accel];
+	[glView setAccel:accel];
 }
 
 
