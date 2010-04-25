@@ -8,15 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@class EAGLView;
+//@class EAGLView;
+@class MainGameView;
 
-@interface CS480_HW3AppDelegate : NSObject <UIApplicationDelegate> {
+@interface CS480_HW3AppDelegate : NSObject <UIApplicationDelegate, UIAccelerometerDelegate> {
     UIWindow *window;
-    EAGLView *glView;
+    //EAGLView *glView;
+	MainGameView *glView;
+	UIAccelerationValue accel[3];
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet EAGLView *glView;
+//@property (nonatomic, retain) IBOutlet EAGLView *glView;
+@property (nonatomic, retain) IBOutlet MainGameView *glView;
 
 @end
 
