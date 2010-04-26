@@ -36,7 +36,11 @@
 	return self;
 }
 
-- (void) updateAndDraw {
+-(void) updateAndDraw: (float) _x: (float) _y: (float) _z {
+	x = _x;
+	y = _y;
+	x = _z;
+
 	if ([unallocParts count] > 0) {
 		[[parts objectAtIndex:0] allocate:x :y :z :.5f :10];
 		[parts addObject: [unallocParts objectAtIndex:0]];

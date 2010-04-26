@@ -12,10 +12,17 @@
 
 @interface ParticleController : NSObject {
 	NSMutableArray *explosions;
+	NSMutableArray *trails;
+	
+	int sx;
+	int sy;
+	int sz;
 }
 
 - (id) init;
-- (void) explodeAt: (int)x : (int)y : (int)z;
+- (void) explodeAt: (float)x : (float) y : (float) z;
+- (void) trailAt: (float)x : (float) y : (float) z;
 - (void) updateAndDraw;
+- (void) setShipCoord: (float)x : (float) y : (float) z;
 
 @end

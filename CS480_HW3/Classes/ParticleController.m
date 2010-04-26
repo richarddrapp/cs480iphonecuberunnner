@@ -8,6 +8,7 @@
 
 #import "ParticleController.h"
 #import "ParticleBase.h"
+#import "ParticleTrail.h"
 
 
 @implementation ParticleController
@@ -16,25 +17,38 @@
 	self = [super init];
 	
 	explosions = [[NSMutableArray alloc] init];
+	sx = 0;
+	sy = 0;
+	sz = 0;
 	
 	return self;
 }
 
--(void) explodeAt:(int)x :(int)y :(int)z {
+-(void) explodeAt:(float)x : (float) y : (float) z {
 	[explosions addObject:[[ParticleBase alloc] initAt:x :y :z :50]];
+}
+-(void) trailAt:(float)x : (float) y : (float) z; {
+	[trails addObject:[[ParticleTrail alloc] initAt:x :y :z :50]];
 }
 
 -(void) updateAndDraw {
 	for (int i = 0; i < [explosions count]; i++) {
 		[[explosions objectAtIndex:i] updateAndDraw];
 		if ([[explosions objectAtIndex:i] live] == NO) {
-			NSLog(@"Removing explosion begin");
 			[[explosions objectAtIndex:i] release];
 			[explosions removeObjectAtIndex:i];
 			i--;
-			NSLog(@"Removing explosion done");
 		}
 	}
+	for (int i = 0; i < [trails count]; i++) {
+		[[trails objectAtIndex:i] updateAndDraw: sx: sy: sz];
+	}
+}
+
+-(void) setShipCoord:(float)x :(float)y :(float)z {
+	sx = x;
+	sy = y;
+	sz = z;
 }
 
 @end
