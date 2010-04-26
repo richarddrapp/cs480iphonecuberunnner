@@ -230,6 +230,7 @@ EAGL surface has an alpha channel.
 	// update and draw all particles
 	
 	[pController updateAndDraw];
+	[pController explodeAt: arc4random()%30 - 15 :arc4random()%30 - 15  : -5];
 	
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
