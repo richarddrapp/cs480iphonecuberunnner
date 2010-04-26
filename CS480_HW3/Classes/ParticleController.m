@@ -7,6 +7,7 @@
 //
 
 #import "ParticleController.h"
+#import "ParticleBase.h"
 
 
 @implementation ParticleController
@@ -26,6 +27,13 @@
 -(void) updateAndDraw {
 	for (int i = 0; i < [explosions count]; i++) {
 		[[explosions objectAtIndex:i] updateAndDraw];
+		if ([[explosions objectAtIndex:i] live] == NO) {
+			NSLog(@"Removing explosion begin");
+			[[explosions objectAtIndex:i] release];
+			[explosions removeObjectAtIndex:i];
+			i--;
+			NSLog(@"Removing explosion done");
+		}
 	}
 }
 
