@@ -73,7 +73,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 587EC6CA11810FA300803532 /* CS480_HW3 */;
-		activeSDKPreference = iphoneos3.1.3;
+		activeSDKPreference = iphonesimulator3.1.3;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* CS480_HW3 */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* CS480_HW3 */,
@@ -288,6 +288,9 @@
 			5882872C1185839B00986605 = 5882872C1185839B00986605 /* PBXTextBookmark */;
 			5882872F118583F400986605 = 5882872F118583F400986605 /* PBXTextBookmark */;
 			588287321185843100986605 = 588287321185843100986605 /* PBXTextBookmark */;
+			5882874A118589F100986605 /* PBXTextBookmark */ = 5882874A118589F100986605 /* PBXTextBookmark */;
+			5882874B118589F100986605 /* PBXTextBookmark */ = 5882874B118589F100986605 /* PBXTextBookmark */;
+			5882875A11858A2500986605 /* PBXTextBookmark */ = 5882875A11858A2500986605 /* PBXTextBookmark */;
 			58A5CBC51181160B00D6BB25 = 58A5CBC51181160B00D6BB25 /* PBXTextBookmark */;
 			58A897B411811A760054072C = 58A897B411811A760054072C /* PBXTextBookmark */;
 			58E5E39311854C680070A605 = 58E5E39311854C680070A605 /* PBXTextBookmark */;
@@ -364,7 +367,7 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 78";
 		rLen = 0;
-		rLoc = 2285;
+		rLoc = 2358;
 		rType = 0;
 		vrLen = 1396;
 		vrLoc = 5237;
@@ -473,9 +476,9 @@
 	};
 	5867ACCF1184490B009C0C9A /* MainGameView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1161, 5446}}";
-			sepNavSelRange = "{2397, 0}";
-			sepNavVisRange = "{2271, 1041}";
+			sepNavIntBoundsRect = "{{0, 0}, {1326, 5320}}";
+			sepNavSelRange = "{7565, 0}";
+			sepNavVisRange = "{7375, 944}";
 		};
 	};
 	5867ACF911844C06009C0C9A /* PBXTextBookmark */ = {
@@ -699,7 +702,7 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 78";
 		rLen = 0;
-		rLoc = 2285;
+		rLoc = 2358;
 		rType = 0;
 		vrLen = 1159;
 		vrLoc = 3123;
@@ -838,8 +841,8 @@
 		isa = PBXTextBookmark;
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 119";
-		rLen = 236;
-		rLoc = 3514;
+		rLen = 133;
+		rLoc = 3587;
 		rType = 0;
 		vrLen = 1200;
 		vrLoc = 3065;
@@ -949,8 +952,8 @@
 		isa = PBXTextBookmark;
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 119";
-		rLen = 236;
-		rLoc = 3514;
+		rLen = 133;
+		rLoc = 3587;
 		rType = 0;
 		vrLen = 651;
 		vrLoc = 417;
@@ -1133,8 +1136,8 @@
 		isa = PBXTextBookmark;
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 119";
-		rLen = 236;
-		rLoc = 3514;
+		rLen = 133;
+		rLoc = 3587;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 338;
@@ -1259,7 +1262,7 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 125";
 		rLen = 0;
-		rLoc = 3751;
+		rLoc = 3720;
 		rType = 0;
 		vrLen = 1322;
 		vrLoc = 3065;
@@ -1329,7 +1332,7 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 123";
 		rLen = 0;
-		rLoc = 3679;
+		rLoc = 3720;
 		rType = 0;
 		vrLen = 1214;
 		vrLoc = 3181;
@@ -1339,7 +1342,7 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 108";
 		rLen = 56;
-		rLoc = 3067;
+		rLoc = 3140;
 		rType = 0;
 		vrLen = 1371;
 		vrLoc = 2446;
@@ -1389,7 +1392,7 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 108";
 		rLen = 58;
-		rLoc = 3066;
+		rLoc = 3139;
 		rType = 0;
 		vrLen = 1307;
 		vrLoc = 2444;
@@ -1549,7 +1552,7 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 227";
 		rLen = 0;
-		rLoc = 7454;
+		rLoc = 7450;
 		rType = 0;
 		vrLen = 941;
 		vrLoc = 6655;
@@ -1559,7 +1562,7 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 227";
 		rLen = 0;
-		rLoc = 7454;
+		rLoc = 7450;
 		rType = 0;
 		vrLen = 924;
 		vrLoc = 6733;
@@ -1569,7 +1572,7 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 228";
 		rLen = 0;
-		rLoc = 7455;
+		rLoc = 7451;
 		rType = 0;
 		vrLen = 897;
 		vrLoc = 6768;
@@ -1599,7 +1602,7 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 228";
 		rLen = 0;
-		rLoc = 7455;
+		rLoc = 7451;
 		rType = 0;
 		vrLen = 897;
 		vrLoc = 6768;
@@ -1609,7 +1612,7 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 102";
 		rLen = 0;
-		rLoc = 2977;
+		rLoc = 3050;
 		rType = 0;
 		vrLen = 1138;
 		vrLoc = 2533;
@@ -1619,7 +1622,7 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 102";
 		rLen = 0;
-		rLoc = 2977;
+		rLoc = 3050;
 		rType = 0;
 		vrLen = 1196;
 		vrLoc = 2556;
@@ -1629,7 +1632,7 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 102";
 		rLen = 0;
-		rLoc = 2983;
+		rLoc = 3056;
 		rType = 0;
 		vrLen = 1234;
 		vrLoc = 2572;
@@ -1639,7 +1642,7 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 102";
 		rLen = 0;
-		rLoc = 2984;
+		rLoc = 3057;
 		rType = 0;
 		vrLen = 1283;
 		vrLoc = 2572;
@@ -1649,7 +1652,7 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 102";
 		rLen = 0;
-		rLoc = 2984;
+		rLoc = 3057;
 		rType = 0;
 		vrLen = 1325;
 		vrLoc = 2593;
@@ -1659,10 +1662,40 @@
 		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
 		name = "MainGameView.m: 82";
 		rLen = 0;
-		rLoc = 2397;
+		rLoc = 2470;
 		rType = 0;
 		vrLen = 1041;
 		vrLoc = 2271;
+	};
+	5882874A118589F100986605 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
+		name = "MainGameView.m: 234";
+		rLen = 0;
+		rLoc = 7451;
+		rType = 0;
+		vrLen = 899;
+		vrLoc = 6734;
+	};
+	5882874B118589F100986605 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
+		name = "MainGameView.m: 235";
+		rLen = 0;
+		rLoc = 7447;
+		rType = 0;
+		vrLen = 855;
+		vrLoc = 6710;
+	};
+	5882875A11858A2500986605 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
+		name = "MainGameView.m: 245";
+		rLen = 0;
+		rLoc = 7565;
+		rType = 0;
+		vrLen = 944;
+		vrLoc = 7375;
 	};
 	58A5CBC51181160B00D6BB25 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
