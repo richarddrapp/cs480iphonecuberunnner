@@ -266,6 +266,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
+								<string>5867AD1411844D63009C0C9A</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -274,8 +275,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>15</integer>
 									<integer>9</integer>
-									<integer>2</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -319,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainGameView.m</string>
+								<string>MainGameView.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,19 +328,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MainGameView.m</string>
+										<string>MainGameView.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>588287F11185A3A200986605</string>
+										<string>5882882E1185B1C400986605</string>
 										<key>history</key>
 										<array>
 											<string>58A5CBC51181160B00D6BB25</string>
 											<string>58A897B411811A760054072C</string>
 											<string>5867ACF911844C06009C0C9A</string>
-											<string>5867ACFA11844C06009C0C9A</string>
 											<string>5867ACFB11844C06009C0C9A</string>
-											<string>5867AD41118454BA009C0C9A</string>
 											<string>5867AD45118454BA009C0C9A</string>
 											<string>5814CEA111852EB00021D912</string>
 											<string>5814CEB2118544D50021D912</string>
@@ -353,15 +352,17 @@
 											<string>5882868B118573DC00986605</string>
 											<string>5882868C118573DC00986605</string>
 											<string>5882868D118573DC00986605</string>
-											<string>588287031185812200986605</string>
-											<string>58828783118593F600986605</string>
-											<string>58828794118594C200986605</string>
 											<string>58828795118594C200986605</string>
 											<string>5882879B118594E900986605</string>
-											<string>588287D31185A1E900986605</string>
-											<string>588287D41185A1E900986605</string>
-											<string>588287EF1185A3A200986605</string>
-											<string>588287F01185A3A200986605</string>
+											<string>588288201185B12500986605</string>
+											<string>588288211185B12500986605</string>
+											<string>588288221185B12500986605</string>
+											<string>588288231185B12500986605</string>
+											<string>588288291185B1C400986605</string>
+											<string>5882882A1185B1C400986605</string>
+											<string>5882882B1185B1C400986605</string>
+											<string>5882882C1185B1C400986605</string>
+											<string>5882882D1185B1C400986605</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -588,7 +589,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SpawnManager.m</string>
+								<string>MainGameView.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

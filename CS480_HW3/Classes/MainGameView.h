@@ -1,5 +1,7 @@
 /*
 
+ This class is based on the EAGL template provided in XCode
+ 
 File: MainGameView.h
 Abstract: This class wraps the CAEAGLLayer from CoreAnimation into a convenient
 UIView subclass. The view content is basically an EAGL surface you render your
@@ -26,10 +28,10 @@ EAGL surface has an alpha channel.
 	
 	EAGLContext *context;
 	
-	// OpenGL names for the renderbuffer and framebuffers used to render to this view
+	// The renderbuffer and framebuffers
 	GLuint viewColorBuffer, viewFramebuffer;
 	
-	// OpenGL name for the depth buffer that is attached to viewFramebuffer, if it exists (0 if it does not exist)
+	// OpenGL name for the depth buffer that is attached to viewFramebuffer
 	GLuint depthRenderbuffer;
 	
 	BOOL animating;
@@ -51,6 +53,7 @@ EAGL surface has an alpha channel.
 	
 	//Particle stuff
 	ParticleController *pController;
+	
 }
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
