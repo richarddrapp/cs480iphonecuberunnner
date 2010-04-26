@@ -45,6 +45,7 @@
 
 // allocator function
 - (void) allocate: (float) _x : (float) _y : (float) _z : (float) _speed : (int) _life;
+- (void) allocateTrail: (float) _x : (float) _y : (float) _z : (float) _speed : (int) _life;
 
 
 - (void) updateParticle;
