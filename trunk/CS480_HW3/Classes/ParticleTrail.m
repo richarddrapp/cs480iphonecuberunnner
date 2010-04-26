@@ -39,7 +39,10 @@
 }
 
 -(void) updateAndDraw {
-	[[parts objectAtIndex:(count%particles)] allocateTrail:sx :sy :sz :.25f :10];
+	for (int i = 0; i < 10; i++) {
+		[[parts objectAtIndex:(count%particles)] allocateTrail:sx :sy :sz :.25f :10];
+		count++;
+	}
 	for (int i = 0; i < particles; i++) {
 		[[parts objectAtIndex:i] updateParticle];
 		[[parts objectAtIndex:i] drawParticle];
@@ -47,7 +50,6 @@
 	if (particles < 1) {
 		live = NO;
 	}
-	count++;
 }
 
 -(void) setSpawnCoord: (float) x: (float) y: (float) z {

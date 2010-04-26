@@ -29,6 +29,8 @@
 	int life;
 	int maxLife;
 	
+	int type;
+	
 	float _material[3];
 	
 	bool visible;
@@ -50,5 +52,7 @@
 
 - (void) updateParticle;
 - (void) drawParticle;
+
+- (float)dtr:(int)d;
 
 @end

@@ -17,7 +17,11 @@
 	float sx;
 	float sy;
 	float sz;
+	
+	bool exploding;
 }
+
+@property(readonly) bool exploding;
 
 - (id) init;
 - (void) explodeAt: (float)x : (float) y : (float) z;
