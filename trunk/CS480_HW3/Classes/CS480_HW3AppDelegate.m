@@ -22,10 +22,10 @@
 @synthesize startupView;
 @synthesize startButton;
 @synthesize lblMessage;
+@synthesize player;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {	
-	
 	[window addSubview:startupView];
     [window makeKeyAndVisible];
 	
@@ -36,6 +36,22 @@
 //	[[UIAccelerometer sharedAccelerometer] setDelegate:self];	
 	
     return YES;
+}
+
+// delegate method
+- (void) audioPlayerDidFinishPlaying: (AVAudioPlayer *) player
+                        successfully: (BOOL) completed {
+    if (completed == YES) {
+        self.startButton.enabled = YES;
+    }
+}
+
+// 
+- (IBAction) play {
+	
+	self.startButton.enabled = NO;
+	[self.player play];
+	
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -67,6 +83,22 @@
 
 - (IBAction)startGame{
 	
+	//Sound stuff
+	NSString *soundFilePath =
+	[[NSBundle mainBundle] pathForResource: @"music"
+									ofType: @"wav" inDirectory: @"/"];
+	
+	NSURL *fileURL = [[NSURL alloc] initFileURLWithPath: soundFilePath];
+	
+	AVAudioPlayer *newPlayer =
+	[[AVAudioPlayer alloc] initWithContentsOfURL: fileURL
+										   error: nil];
+	[fileURL release];	
+	self.player = newPlayer;
+	[newPlayer release];	
+	[player prepareToPlay];
+	[player setDelegate: self];
+	
 	[startupView removeFromSuperview];
 	[window addSubview: glView];
 	
@@ -81,12 +113,17 @@
 	[[UIAccelerometer sharedAccelerometer] setUpdateInterval:(1.0 / kAccelerometerFrequency)];
 	[[UIAccelerometer sharedAccelerometer] setDelegate:self];
 	
+	self.startButton.enabled = NO;
+	[self.player play];
+	
 	[startButton setHidden:YES];
 	[startButton setAlpha:0.00f];
 	[startButton removeFromSuperview];
 	[startButton release];
 	
 	[startupView removeFromSuperview];
+	
+	[self play];
 	//[startupView setHidden:YES];
 	//[startupView setAlpha:0.00f];
 }
