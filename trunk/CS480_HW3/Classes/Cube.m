@@ -13,6 +13,7 @@
 @synthesize x;
 @synthesize y;
 @synthesize z;
+@synthesize scale;
 
 //static variable of the cube model
 static const float cubeVertices[] = {
@@ -48,27 +49,53 @@ static const float cubeVertices[] = {
 	0.5f, -0.5f, -0.5f,
 };
 
+//override the constructor
+-(id)init
+{
+    if (self = [super init])
+    {
+		// Initialization code here
+		x = 0.0f;
+		y = 0.0f;
+		z = 0.0f;
+		scale = 1.0f;
+    }
+    return self;
+}
+
 //called when openGL is ready to draw the cube
 - (void) drawCube {
 	
-	 glVertexPointer(3, GL_FLOAT, 0, cubeVertices);	
-	 glEnableClientState(GL_VERTEX_ARRAY);
+	//glPushMatrix adds a matrix to the matrix stack
+	//it duplicates the matrix on top
+	glPushMatrix();
+	
+	//this should always be commented out
+	//glLoadIdentity();
+	
+	glScalef(scale, scale, scale);
+	glTranslatef(x, y, z);
+	glVertexPointer(3, GL_FLOAT, 0, cubeVertices);	
+	glEnableClientState(GL_VERTEX_ARRAY);
 	 
-	 //set a color before drawing
-	 //glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
-	 glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
-	 glDrawArrays(GL_TRIANGLE_STRIP, 4, 4);
+	//set a color before drawing
+	//glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
+	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+	glDrawArrays(GL_TRIANGLE_STRIP, 4, 4);
 	 
-	 //glColor4f(0.0f, 1.0f, 0.0f, 1.0f);
-	 glDrawArrays(GL_TRIANGLE_STRIP, 8, 4);
-	 glDrawArrays(GL_TRIANGLE_STRIP, 12, 4);
+	//glColor4f(0.0f, 1.0f, 0.0f, 1.0f);
+	glDrawArrays(GL_TRIANGLE_STRIP, 8, 4);
+	glDrawArrays(GL_TRIANGLE_STRIP, 12, 4);
 	 
-	 //glColor4f(0.0f, 0.0f, 1.0f, 1.0f);
-	 glDrawArrays(GL_TRIANGLE_STRIP, 16, 4);
-	 glDrawArrays(GL_TRIANGLE_STRIP, 20, 4);
+	//glColor4f(0.0f, 0.0f, 1.0f, 1.0f);
+	glDrawArrays(GL_TRIANGLE_STRIP, 16, 4);
+	glDrawArrays(GL_TRIANGLE_STRIP, 20, 4);
 	 
-	 //disable to prevent messing up other code elsewhere
-	 glDisableClientState(GL_VERTEX_ARRAY);
+	//prevent unwanted side effects
+	glDisableClientState(GL_VERTEX_ARRAY);
+	
+	//pop matrix to prevent unwanted side effects 
+	glPopMatrix();
 	 
 }
 
