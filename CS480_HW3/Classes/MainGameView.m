@@ -78,8 +78,8 @@ EAGL surface has an alpha channel.
 		//Greg stuff
 		spawnManager = [[SpawnManager alloc] init];
 		player = [[Player alloc] init];
-		player.y = 2;
-		player.z = -5;
+		player.y = 0;
+		player.z = -2;
 		
 		// initialize the particle controller
 		pController = [[ParticleController alloc] init];
@@ -99,7 +99,7 @@ EAGL surface has an alpha channel.
 	const GLfloat			matDiffuse[] = {1.0, 1.0, 1.0, 1.0};	
 	const GLfloat			matSpecular[] = {1.0, 1.0, 1.0, 1.0};
 	const GLfloat			lightPosition[] = {-10.0, 3.0, -1.0, 0.0}; 
-	const GLfloat			cameraPosition[] = {0.0f, -2.0f, 0.0f};
+	const GLfloat			cameraPosition[] = {0.0f, -2.0f, -3.0f};
 	const GLfloat			lightShininess = 100.0,
 							zNear = 0.1,
 							zFar = 1000.0,
@@ -134,6 +134,7 @@ EAGL surface has an alpha channel.
 	glFrustumf(-size, size, -size / (rect.size.width / rect.size.height), size / (rect.size.width / rect.size.height), zNear, zFar);
 	glViewport(0, 0, rect.size.width, rect.size.height);
 	glTranslatef(cameraPosition[0], cameraPosition[1], cameraPosition[2]);
+	glRotatef(30, 1.0, 0.0, 0.0);
 	
 	
 	//Make the OpenGL modelview matrix the default
@@ -222,6 +223,15 @@ EAGL surface has an alpha channel.
 	[spawnManager update];
 	[spawnManager drawCubes];
 	
+	//update the player with accelerometer information
+	player.x += (float) accel[0] / 4;
+	if(player.x > 3) {
+		player.x = 3;
+	}
+	if(player.x < -3) {
+		player.x = -3;
+	}
+
 	//draw the player
 	[player drawPlayer];
 	

@@ -72,7 +72,7 @@ static const float cubeNormals[] = {
 		x = 0.0f;
 		y = 0.0f;
 		z = 0.0f;
-		scale = 1.5f;
+		scale = 0.5f;
 		rotationZ = 45.0f;
 		//default material color
 		_material[0] = 0.0f;
