@@ -29,6 +29,8 @@
 	int life;
 	int maxLife;
 	
+	float _material[3];
+	
 	bool visible;
 }
 
