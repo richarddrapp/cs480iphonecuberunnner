@@ -9,7 +9,7 @@
 #import "ParticleCube.h"
 
 #define eSize		0.1f
-#define tSize		0.05f
+#define tSize		0.04f
 
 @implementation ParticleCube
 @synthesize x;
