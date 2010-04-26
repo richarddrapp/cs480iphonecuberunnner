@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ParticleBase.h"
 
 
 @interface ParticleController : NSObject {
@@ -14,7 +15,7 @@
 }
 
 - (id) init;
-
-
+- (void) explodeAt: (int)x : (int)y : (int)z;
+- (void) updateAndDraw;
 
 @end
