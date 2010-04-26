@@ -95,6 +95,30 @@ static const float cubeVertices[] = {
 	_material[2] = 0.0f;
 }
 
+- (void) allocateTrail:(float)_x :(float)_y :(float)_z :(float)_speed :(int)_life {
+	x = _x;
+	y = _y;
+	z = _z;
+	
+	life = _life;
+	maxLife = _life;
+	
+	int angleVert = arc4random() % 1;
+	int angleRot = arc4random() % 1;
+	angleVert = 0;
+	angleRot = 0;
+	
+	ySpeed = _speed * sin( angleVert ) * cos( angleRot );
+	zSpeed = _speed * cos( angleVert );
+	xSpeed = _speed * sin( angleVert ) * sin( angleRot );
+	
+	visible = YES;
+	
+	_material[0] = 0.8f;
+	_material[1] = 0.8f;
+	_material[2] = 0.0f;
+}
+
 - (void) updateParticle {
 	x += xSpeed;
 	y += ySpeed;

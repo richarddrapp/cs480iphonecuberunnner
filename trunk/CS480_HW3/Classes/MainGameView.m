@@ -17,7 +17,7 @@ EAGL surface has an alpha channel.
 // CONSTANTS
 #define kTeapotScale				3.0
 //player bounds
-#define kBoundsX					3.5
+#define kBoundsX					3.0
 static float simVelocity = 0.1;
 
 // MACROS

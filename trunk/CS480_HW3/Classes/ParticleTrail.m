@@ -39,7 +39,7 @@
 }
 
 -(void) updateAndDraw {
-	[[parts objectAtIndex:(count%particles)] allocate:sx :sy :sz :.5f :10];
+	[[parts objectAtIndex:(count%particles)] allocateTrail:sx :sy :sz :.25f :10];
 	for (int i = 0; i < particles; i++) {
 		[[parts objectAtIndex:i] updateParticle];
 		[[parts objectAtIndex:i] drawParticle];

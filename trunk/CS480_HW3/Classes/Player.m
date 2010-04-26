@@ -8,6 +8,8 @@
 
 #import "Player.h"
 
+#define kSize		.25f
+
 @implementation Player
 @synthesize x;
 @synthesize y;
@@ -17,35 +19,36 @@
 //static variable of the cube model
 static const float cubeVertices[] = {
 	// FRONT
-	-0.5f, -0.5f,  0.5f,
-	0.5f, -0.5f,  0.5f,
-	-0.5f,  0.5f,  0.5f,
-	0.5f,  0.5f,  0.5f,
+	-kSize, -kSize,  kSize,
+	kSize, -kSize,  kSize,
+	-kSize,  kSize,  kSize,
+	kSize,  kSize,  kSize,
 	// BACK
-	-0.5f, -0.5f, -0.5f,
-	-0.5f,  0.5f, -0.5f,
-	0.5f, -0.5f, -0.5f,
-	0.5f,  0.5f, -0.5f,
+	-kSize, -kSize, -kSize,
+	-kSize,  kSize, -kSize,
+	kSize, -kSize, -kSize,
+	kSize,  kSize, -kSize,
 	// LEFT
-	-0.5f, -0.5f,  0.5f,
-	-0.5f,  0.5f,  0.5f,
-	-0.5f, -0.5f, -0.5f,
-	-0.5f,  0.5f, -0.5f,
+	-kSize, -kSize,  kSize,
+	-kSize,  kSize,  kSize,
+	-kSize, -kSize, -kSize,
+	-kSize,  kSize, -kSize,
 	// RIGHT
-	0.5f, -0.5f, -0.5f,
-	0.5f,  0.5f, -0.5f,
-	0.5f, -0.5f,  0.5f,
-	0.5f,  0.5f,  0.5f,
+	kSize, -kSize, -kSize,
+	kSize,  kSize, -kSize,
+	kSize, -kSize,  kSize,
+	kSize,  kSize,  kSize,
 	// TOP
-	-0.5f,  0.5f,  0.5f,
-	0.5f,  0.5f,  0.5f,
-	-0.5f,  0.5f, -0.5f,
-	0.5f,  0.5f, -0.5f,
+	-kSize,  kSize,  kSize,
+	kSize,  kSize,  kSize,
+	-kSize,  kSize, -kSize,
+	kSize,  kSize, -kSize,
 	// BOTTOM
-	-0.5f, -0.5f,  0.5f,
-	-0.5f, -0.5f, -0.5f,
-	0.5f, -0.5f,  0.5f,
-	0.5f, -0.5f, -0.5f,
+	-kSize, -kSize,  kSize,
+	-kSize, -kSize, -kSize,
+	kSize, -kSize,  kSize,
+	kSize, -kSize, -kSize,
+	
 };
 static const float cubeNormals[] = {
 	// FRONT
@@ -72,7 +75,7 @@ static const float cubeNormals[] = {
 		x = 0.0f;
 		y = 0.0f;
 		z = 0.0f;
-		scale = 0.5f;
+		scale = 1.0f;
 		rotationZ = 45.0f;
 		//default material color
 		_material[0] = 0.0f;
