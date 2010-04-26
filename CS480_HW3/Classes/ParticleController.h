@@ -22,7 +22,7 @@
 - (id) init;
 - (void) explodeAt: (float)x : (float) y : (float) z;
 - (void) trailAt: (float)x : (float) y : (float) z;
-- (void) updateAndDraw;
+- (void) updateAndDrawAll;
 - (void) setShipCoord: (float)x : (float) y : (float) z;
 
 @end

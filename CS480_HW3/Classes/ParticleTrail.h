@@ -18,6 +18,8 @@
 	
 	int particles;
 	
+	int count;
+	
 	NSMutableArray *parts;
 	NSMutableArray *unallocParts;
 	
