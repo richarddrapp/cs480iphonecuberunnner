@@ -121,10 +121,10 @@ EAGL surface has an alpha channel.
 	
 	
 	//Configure OpenGL arrays
-	glEnableClientState(GL_VERTEX_ARRAY);
-	glEnableClientState(GL_NORMAL_ARRAY);
-	glVertexPointer(3 ,GL_FLOAT, 0, teapot_vertices);
-	glNormalPointer(GL_FLOAT, 0, teapot_normals);
+	//glEnableClientState(GL_VERTEX_ARRAY);
+	//glEnableClientState(GL_NORMAL_ARRAY);
+	//glVertexPointer(3 ,GL_FLOAT, 0, teapot_vertices);
+	//glNormalPointer(GL_FLOAT, 0, teapot_normals);
 	glEnable(GL_NORMALIZE);
 	
 	//Set the OpenGL projection matrix

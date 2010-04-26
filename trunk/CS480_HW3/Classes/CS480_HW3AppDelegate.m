@@ -9,6 +9,7 @@
 #import "CS480_HW3AppDelegate.h"
 //#import "EAGLView.h"
 #import "MainGameView.h"
+#import "MainGameViewController.h"
 
 // CONSTANTS
 #define kAccelerometerFrequency		100.0 // Hz
@@ -18,9 +19,11 @@
 
 @synthesize window;
 @synthesize glView;
+//@synthesize viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+{	
+	
     [glView startAnimation];
 	
 	//lets configure the accelerometer

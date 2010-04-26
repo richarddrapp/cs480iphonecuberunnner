@@ -47,7 +47,20 @@ static const float cubeVertices[] = {
 	0.5f, -0.5f,  0.5f,
 	0.5f, -0.5f, -0.5f,
 };
-
+static const float cubeNormals[] = {
+	// FRONT
+	0.0f, 0.0f, 1.0f,
+	// BACK
+	0.0f, 0.0f, -1.0f,
+	// LEFT
+	-1.0f, 0.0f, 0.0f,
+	// RIGHT
+	1.0f, 0.0f, 0.0f,
+	// TOP
+	0.0f, 1.0f, 0.0f,
+	// BOTTOM
+	0.0f, -1.0f, 0.0f,
+};
 
 //static variable of the cube model
 //override the constructor
@@ -61,8 +74,18 @@ static const float cubeVertices[] = {
 		z = 0.0f;
 		scale = 1.5f;
 		rotationZ = 45.0f;
+		//default material color
+		_material[0] = 0.0f;
+		_material[1] = 0.0f;
+		_material[2] = 0.8f;
     }
     return self;
+}
+
+- (void) setMaterial:(float) r :(float) g :(float) b {
+	_material[0] = r;
+	_material[1] = g;
+	_material[2] = b;
 }
 
 //called when openGL is ready to draw the cube
@@ -79,24 +102,27 @@ static const float cubeVertices[] = {
 	glRotatef(rotationZ, x, y, z);
 	glTranslatef(x, y, z);
 	
+	//Configure OpenGL arrays	
+	glEnableClientState(GL_VERTEX_ARRAY);	
+	glEnableClientState(GL_NORMAL_ARRAY);
 	glVertexPointer(3, GL_FLOAT, 0, cubeVertices);	
-	glEnableClientState(GL_VERTEX_ARRAY);
+	glNormalPointer(GL_FLOAT, 0, cubeNormals);
 	
-	//set a color before drawing
-	//glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
+	//material color
+	glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, _material);
+		
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 	glDrawArrays(GL_TRIANGLE_STRIP, 4, 4);
 	
-	//glColor4f(0.0f, 1.0f, 0.0f, 1.0f);
 	glDrawArrays(GL_TRIANGLE_STRIP, 8, 4);
 	glDrawArrays(GL_TRIANGLE_STRIP, 12, 4);
 	
-	//glColor4f(0.0f, 0.0f, 1.0f, 1.0f);
 	glDrawArrays(GL_TRIANGLE_STRIP, 16, 4);
 	glDrawArrays(GL_TRIANGLE_STRIP, 20, 4);
 	
 	//prevent unwanted side effects
 	glDisableClientState(GL_VERTEX_ARRAY);
+	glDisableClientState(GL_NORMAL_ARRAY);
 	
 	//pop matrix to prevent unwanted side effects 
 	glPopMatrix();	
