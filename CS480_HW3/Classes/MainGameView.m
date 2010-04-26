@@ -87,6 +87,7 @@ static float simVelocity = 0.1;
 		// initialize the particle controller
 		pController = [[ParticleController alloc] init];
 		[pController explodeAt:0 :0 :-5];
+		[pController trailAt:0 :0 :-5];
 			
 		[self setupView];
 	}
@@ -242,6 +243,7 @@ static float simVelocity = 0.1;
 	
 	// update and draw all particles
 	
+	[pController setShipCoord:player.x : player.y : player.z];
 	[pController updateAndDrawAll];
 
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
