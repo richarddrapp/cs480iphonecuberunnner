@@ -25,12 +25,14 @@
 	float x;
 	float y;
 	float z;
+	float scale;
 	
 }
 
 @property float x;
 @property float y;
 @property float z;
+@property float scale;
 
 - (void) drawCube;
 

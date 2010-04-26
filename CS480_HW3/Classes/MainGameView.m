@@ -76,9 +76,9 @@ EAGL surface has an alpha channel.
 		
 		accel = calloc(3, sizeof(UIAccelerationValue));
 		
-		//temp cube
-		tempCube = [[Cube alloc] init];
-		
+		//Greg stuff
+		spawnManager = [[SpawnManager alloc] init];
+			
 		[self setupView];
 	}
 	
@@ -92,7 +92,8 @@ EAGL surface has an alpha channel.
 	const GLfloat			matAmbient[] = {0.6, 0.6, 0.6, 1.0};
 	const GLfloat			matDiffuse[] = {1.0, 1.0, 1.0, 1.0};	
 	const GLfloat			matSpecular[] = {1.0, 1.0, 1.0, 1.0};
-	const GLfloat			lightPosition[] = {0.0, 0.0, 1.0, 0.0}; 
+	const GLfloat			lightPosition[] = {-10.0, 3.0, -1.0, 0.0}; 
+	const GLfloat			cameraPosition[] = {0.0f, -2.0f, 0.0f};
 	const GLfloat			lightShininess = 100.0,
 							zNear = 0.1,
 							zFar = 1000.0,
@@ -125,6 +126,8 @@ EAGL surface has an alpha channel.
 	CGRect rect = self.bounds;
 	glFrustumf(-size, size, -size / (rect.size.width / rect.size.height), size / (rect.size.width / rect.size.height), zNear, zFar);
 	glViewport(0, 0, rect.size.width, rect.size.height);
+	glTranslatef(cameraPosition[0], cameraPosition[1], cameraPosition[2]);
+	
 	
 	//Make the OpenGL modelview matrix the default
 	glMatrixMode(GL_MODELVIEW);
@@ -147,11 +150,13 @@ EAGL surface has an alpha channel.
 		
 	//Setup model view matrix
 	glLoadIdentity();
-	glTranslatef(0.0, -0.1, -8.0);
-	//for the teapot
-	//glTranslatef(0.0, -0.1, -1.0);
+	
+	
+	/*
+	//HERE ARE ALL OF THE TEAPOT TRANSFORMS, THESE SHOULD BE REMOVED FROM THE FINAL PROJECT
+	//GREG WILL REMOVE THEM
+	glTranslatef(0.0, -0.1, -1.0);
 	glScalef(kTeapotScale, kTeapotScale, kTeapotScale);
-	//glScalef(3.0, 2.0, 2.0);
 		
 	if(length >= 0.1)
 	{
@@ -197,14 +202,19 @@ EAGL surface has an alpha channel.
 		spinY += 0.25;
 	}
 #endif
-		/*
+	
+	
 	// Draw teapot. The new_teapot_indicies array is an RLE (run-length encoded) version of the teapot_indices array in teapot.h
 	for(int i = 0; i < num_teapot_indices; i += new_teapot_indicies[i] + 1)
 	{
 		glDrawElements(GL_TRIANGLE_STRIP, new_teapot_indicies[i], GL_UNSIGNED_SHORT, &new_teapot_indicies[i+1]);
-	}*/
-	[tempCube drawCube];
- 
+	}
+	//*/
+	
+	//the spawn manager has seperate calls for both update and draw
+	[spawnManager update];
+	[spawnManager drawCubes];
+	
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
 }

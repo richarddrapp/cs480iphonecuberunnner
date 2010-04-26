@@ -13,6 +13,7 @@ EAGL surface has an alpha channel.
 #import <OpenGLES/ES1/gl.h>
 #import <OpenGLES/ES1/glext.h>
 #import "Cube.h"
+#import "SpawnManager.h"
 
 @interface MainGameView : UIView
 {
@@ -42,8 +43,9 @@ EAGL surface has an alpha channel.
 	//this value gets set automatically by the application delegate
 	UIAccelerationValue	*accel;
 	
-	//TEMPORARY
-	Cube *tempCube;
+	//Greg's Stuff
+	SpawnManager *spawnManager;
+	
 }
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
