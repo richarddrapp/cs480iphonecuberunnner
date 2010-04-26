@@ -7,13 +7,16 @@
 //
 
 #import "Cube.h"
-
+#import "Player.h"
 
 @implementation Cube
 @synthesize x;
 @synthesize y;
 @synthesize z;
 @synthesize scale;
+@synthesize width;
+@synthesize height;
+@synthesize depth;
 
 //static variable of the cube model
 static const float cubeVertices[] = {
@@ -75,6 +78,7 @@ static const float cubeNormals[] = {
 		y = 0.0f;
 		z = 0.0f;
 		scale = 1.0f;
+		width = height = depth = 1;
 		//default material color
 		_material[0] = 0.8f;
 		_material[1] = 0.0f;

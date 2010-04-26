@@ -274,6 +274,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>13</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -318,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainGameView.m</string>
+								<string>SpawnManager.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MainGameView.m</string>
+										<string>SpawnManager.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>5882875A11858A2500986605</string>
+										<string>5882879D118594E900986605</string>
 										<key>history</key>
 										<array>
 											<string>58A5CBC51181160B00D6BB25</string>
@@ -352,14 +353,15 @@
 											<string>5882868B118573DC00986605</string>
 											<string>5882868C118573DC00986605</string>
 											<string>5882868D118573DC00986605</string>
-											<string>588286CA11857B0900986605</string>
-											<string>588287021185812200986605</string>
 											<string>588287031185812200986605</string>
-											<string>588287051185812200986605</string>
-											<string>588287061185812200986605</string>
-											<string>588287201185834100986605</string>
-											<string>588287211185834100986605</string>
-											<string>5882874A118589F100986605</string>
+											<string>5882877F118593F600986605</string>
+											<string>58828783118593F600986605</string>
+											<string>58828784118593F600986605</string>
+											<string>58828785118593F600986605</string>
+											<string>58828794118594C200986605</string>
+											<string>58828795118594C200986605</string>
+											<string>5882879B118594E900986605</string>
+											<string>5882879C118594E900986605</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -557,11 +559,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>5882879E118594E900986605</string>
 		<string>58828756118589F100986605</string>
 		<string>58828757118589F100986605</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>587EC6D911810FAB00803532</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/greglieberman/Documents/My Projects/CS480 iPhone Project/CS480_HW3/CS480_HW3.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -586,7 +589,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>SpawnManager.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -595,7 +598,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {874, 260}}</string>
 								<key>RubberWindowFrame</key>
-								<string>471 262 874 542 0 0 1440 878 </string>
+								<string>333 255 874 542 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -603,6 +606,8 @@
 							<string>260pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -619,7 +624,7 @@
 								<key>Frame</key>
 								<string>{{0, 265}, {874, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>471 262 874 542 0 0 1440 878 </string>
+								<string>333 255 874 542 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -651,7 +656,7 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>471 262 874 542 0 0 1440 878 </string>
+			<string>333 255 874 542 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>587EC6D911810FAB00803532</string>
 			<key>WindowToolIsVisible</key>
@@ -897,6 +902,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -942,7 +949,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
