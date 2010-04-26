@@ -13,17 +13,27 @@
 //@class MainGameViewController;
 
 @interface CS480_HW3AppDelegate : NSObject <UIApplicationDelegate, UIAccelerometerDelegate> {
-    UIWindow *window;
+    UIWindow *window;	
+	UIView *startupView;
+	IBOutlet UIButton *startButton;
+	IBOutlet UILabel *lblMessage;
+	
+	
     //EAGLView *glView;
 	MainGameView *glView;
 	//MainGameViewController *viewController;
 	UIAccelerationValue accel[3];
+	
 }
+
+-(IBAction) startGame;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 //@property (nonatomic, retain) IBOutlet EAGLView *glView;
-@property (nonatomic, retain) IBOutlet MainGameView *glView;
-//@property (nonatomic, retain) IBOutlet MainGameViewController *viewController;
+@property (nonatomic, retain) IBOutlet MainGameView *glView;;
+@property(nonatomic, retain) IBOutlet UIView *startupView;
+@property(nonatomic, retain) IBOutlet UIButton *startButton;
+@property(nonatomic, retain) IBOutlet UILabel *lblMessage;
 
 @end
 

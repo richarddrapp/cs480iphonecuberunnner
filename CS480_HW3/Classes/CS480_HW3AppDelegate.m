@@ -19,16 +19,21 @@
 
 @synthesize window;
 @synthesize glView;
-//@synthesize viewController;
+@synthesize startupView;
+@synthesize startButton;
+@synthesize lblMessage;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {	
 	
-    [glView startAnimation];
+	[window addSubview:startupView];
+    [window makeKeyAndVisible];
 	
-	//lets configure the accelerometer
-	[[UIAccelerometer sharedAccelerometer] setUpdateInterval:(1.0 / kAccelerometerFrequency)];
-	[[UIAccelerometer sharedAccelerometer] setDelegate:self];	
+    //[glView startAnimation];
+//	
+//	//lets configure the accelerometer
+//	[[UIAccelerometer sharedAccelerometer] setUpdateInterval:(1.0 / kAccelerometerFrequency)];
+//	[[UIAccelerometer sharedAccelerometer] setDelegate:self];	
 	
     return YES;
 }
@@ -58,6 +63,32 @@
 	
 	//Update the accelerometer values for the view
 	[glView setAccel:accel];
+}
+
+- (IBAction)startGame{
+	
+	[startupView removeFromSuperview];
+	[window addSubview: glView];
+	
+	NSString *msg = [[NSString alloc] initWithString:@" "];
+	[lblMessage setText:msg];
+	[msg release];
+	
+	
+	[glView startAnimation];
+	
+	//lets configure the accelerometer
+	[[UIAccelerometer sharedAccelerometer] setUpdateInterval:(1.0 / kAccelerometerFrequency)];
+	[[UIAccelerometer sharedAccelerometer] setDelegate:self];
+	
+	[startButton setHidden:YES];
+	[startButton setAlpha:0.00f];
+	[startButton removeFromSuperview];
+	[startButton release];
+	
+	[startupView removeFromSuperview];
+	//[startupView setHidden:YES];
+	//[startupView setAlpha:0.00f];
 }
 
 
