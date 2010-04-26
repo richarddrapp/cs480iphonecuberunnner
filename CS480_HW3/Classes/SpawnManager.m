@@ -7,6 +7,7 @@
 //
 
 #import "SpawnManager.h"
+#import "Player.h"
 
 // A class extension to declare private methods
 @interface SpawnManager (private)
@@ -66,6 +67,21 @@
 	}
 }
 
+//test if the player collided with any cubes
+- (BOOL) testPlayerCollision:(Player *) player {
+	Cube *c;
+	int arrayCount = [cubes count];
+	for (int i=0; i<arrayCount; i++) {
+		c = [cubes objectAtIndex:i];
+		float diffX = fabs(player.x - c.x);
+		float diffY = fabs(player.y - c.y);
+		float diffZ = fabs(player.z - c.z);
+		if (diffX < player.width/2 + c.width/2 && diffY < player.height/2 + c.height/2 && diffZ < player.depth/2 + c.depth/2) {
+			return YES;
+		}
+	}
+	return NO;
+}
 
 
 //@private

@@ -15,6 +15,8 @@
 
 #define kMaxCubes	10
 
+@class Player;
+
 @interface SpawnManager : NSObject {
 	NSMutableArray *cubes;
 	NSTimer *spawnTimer;
@@ -23,5 +25,6 @@
 
 - (void) update;
 - (void) drawCubes;
+- (BOOL) testPlayerCollision:(Player *) player;
 
 @end

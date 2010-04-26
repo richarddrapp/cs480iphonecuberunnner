@@ -20,6 +20,9 @@
 	float z;
 	float scale;
 	float _material[3];
+	float width;
+	float height;
+	float depth;
 	
 }
 
@@ -27,6 +30,9 @@
 @property float y;
 @property float z;
 @property float scale;
+@property (readonly) float width;
+@property (readonly) float height;
+@property (readonly) float depth;
 
 - (void) setMaterial:(float) x :(float) y :(float) z;
 - (void) drawCube;

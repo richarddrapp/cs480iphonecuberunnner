@@ -15,6 +15,9 @@
 @synthesize y;
 @synthesize z;
 @synthesize scale;
+@synthesize width;
+@synthesize height;
+@synthesize depth;
 
 //static variable of the cube model
 static const float cubeVertices[] = {
@@ -77,6 +80,7 @@ static const float cubeNormals[] = {
 		z = 0.0f;
 		scale = 1.0f;
 		rotationZ = 45.0f;
+		width = height = depth = 0.5f;
 		//default material color
 		_material[0] = 0.0f;
 		_material[1] = 0.0f;

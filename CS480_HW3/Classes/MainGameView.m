@@ -86,7 +86,6 @@ static float simVelocity = 0.1;
 		
 		// initialize the particle controller
 		pController = [[ParticleController alloc] init];
-		[pController explodeAt:0 :0 :-5];
 		[pController trailAt:0 :0 :-5];
 			
 		[self setupView];
@@ -218,9 +217,8 @@ static float simVelocity = 0.1;
 	}
 	//*/
 	
-	//the spawn manager has seperate calls for both update and draw
+	//update the spawn manager and player
 	[spawnManager update];
-	[spawnManager drawCubes];
 	
 	//update the player with accelerometer information
 	player.x += (float) accel[0] / 4;
@@ -235,10 +233,18 @@ static float simVelocity = 0.1;
 		player.x = -kBoundsX;
 		simVelocity *= -1;
 	}
-
-	//draw the player
-	[player drawPlayer];
 	
+	//if ship not exploding
+	if([pController exploding] == NO) {
+		//test for collision
+		if ([spawnManager testPlayerCollision:player]) {
+			[pController explodeAt:player.x :player.y :player.x];
+		} else {
+			[player drawPlayer];
+		}
+	}
+	
+	[spawnManager drawCubes];
 	
 	
 	// update and draw all particles
