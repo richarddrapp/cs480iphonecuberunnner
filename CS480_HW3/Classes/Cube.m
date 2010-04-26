@@ -75,9 +75,20 @@ static const float cubeNormals[] = {
 		y = 0.0f;
 		z = 0.0f;
 		scale = 1.0f;
+		//default material color
+		_material[0] = 0.8f;
+		_material[1] = 0.0f;
+		_material[2] = 0.8f;
     }
     return self;
 }
+
+- (void) setMaterial:(float) r :(float) g :(float) b {
+	_material[0] = r;
+	_material[1] = g;
+	_material[2] = b;
+}
+
 
 //called when openGL is ready to draw the cube
 - (void) drawCube {
@@ -89,26 +100,31 @@ static const float cubeNormals[] = {
 	//this should always be commented out
 	//glLoadIdentity();
 	
+	// scale rotate translate
 	glScalef(scale, scale, scale);
 	glTranslatef(x, y, z);
+	
+	//Configure OpenGL arrays	
+	glEnableClientState(GL_VERTEX_ARRAY);	
+	glEnableClientState(GL_NORMAL_ARRAY);
 	glVertexPointer(3, GL_FLOAT, 0, cubeVertices);	
-	glEnableClientState(GL_VERTEX_ARRAY);
+	glNormalPointer(GL_FLOAT, 0, cubeNormals);
+	
+	//material color
+	glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, _material);
 	 
-	//set a color before drawing
-	//glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 	glDrawArrays(GL_TRIANGLE_STRIP, 4, 4);
 	 
-	//glColor4f(0.0f, 1.0f, 0.0f, 1.0f);
 	glDrawArrays(GL_TRIANGLE_STRIP, 8, 4);
 	glDrawArrays(GL_TRIANGLE_STRIP, 12, 4);
 	 
-	//glColor4f(0.0f, 0.0f, 1.0f, 1.0f);
 	glDrawArrays(GL_TRIANGLE_STRIP, 16, 4);
 	glDrawArrays(GL_TRIANGLE_STRIP, 20, 4);
 	 
 	//prevent unwanted side effects
 	glDisableClientState(GL_VERTEX_ARRAY);
+	glDisableClientState(GL_NORMAL_ARRAY);
 	
 	//pop matrix to prevent unwanted side effects 
 	glPopMatrix();

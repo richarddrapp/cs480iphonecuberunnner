@@ -19,7 +19,8 @@
 	float z;
 	float scale;
 	float rotationZ; // in degrees
-	
+	float _material[3];
+
 }
 
 @property float x;
@@ -27,6 +28,7 @@
 @property float z;
 @property float scale;
 
+- (void) setMaterial:(float) x :(float) y :(float) z;
 - (void) drawPlayer;
 
 
