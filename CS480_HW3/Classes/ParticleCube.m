@@ -109,10 +109,6 @@ static const float tCubeVertices[] = {
 	_material[1] = 0.0f;
 	_material[2] = 0.8f;
 	
-	float rmod = (arc4random() % 2);
-	rmod /= 5;
-	_material[0] += rmod;
-	
 	
 	return self;
 }
@@ -139,6 +135,11 @@ static const float tCubeVertices[] = {
 	_material[0] = 0.8f;
 	_material[1] = 0.8f;
 	_material[2] = 0.0f;
+	
+	_material[0] = random();
+	_material[1] = random();
+	_material[2] = random();
+	
 }
 
 - (void) allocateTrail:(float)_x :(float)_y :(float)_z :(float)_speed :(int)_life {
@@ -171,6 +172,10 @@ static const float tCubeVertices[] = {
 	x += xSpeed;
 	y += ySpeed;
 	z += zSpeed;
+	
+	if (type == 2) {
+		_material[1] = 0.8f * (float)life/maxLife;
+	}
 	
 	life--;
 	
