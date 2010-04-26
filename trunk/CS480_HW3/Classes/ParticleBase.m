@@ -19,7 +19,7 @@
 - (ParticleBase*) initAt:(float)_x :(float)_y :(float)_z :(int)_particles {
 	self = [super init];
 	x = _x;
-	y + _y;
+	y = _y;
 	z = _z;
 	
 	live = YES;
@@ -48,7 +48,6 @@
 	}
 	if (particles < 1) {
 		live = NO;
-		NSLog(@"Live Set to NO");
 	}
 }
 
