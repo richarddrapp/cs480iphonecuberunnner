@@ -12,6 +12,7 @@
 
 
 @implementation ParticleController
+@synthesize exploding;
 
 -(id) init {
 	self = [super init];
@@ -29,7 +30,7 @@
 	[explosions addObject:[[ParticleBase alloc] initAt:x :y :z :50]];
 }
 -(void) trailAt:(float)x : (float) y : (float) z; {
-	[trails addObject:[[ParticleTrail alloc] initAt:x :y :z :50]];
+	[trails addObject:[[ParticleTrail alloc] initAt:x :y :z :500]];
 }
 
 -(void) updateAndDrawAll {
@@ -44,6 +45,11 @@
 	for (int j = 0; j < [trails count]; j++) {		
 		[[trails objectAtIndex:j] setSpawnCoord:sx :sy :sz];
 		[[trails objectAtIndex:j] updateAndDraw];		
+	}
+	if ([explosions count] > 0) {
+		exploding = YES;
+	} else {
+		exploding = NO;
 	}
 }
 
