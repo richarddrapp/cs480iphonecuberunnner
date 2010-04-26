@@ -109,6 +109,11 @@ static const float tCubeVertices[] = {
 	_material[1] = 0.0f;
 	_material[2] = 0.8f;
 	
+	float rmod = (arc4random() % 2);
+	rmod /= 5;
+	_material[0] += rmod;
+	
+	
 	return self;
 }
 

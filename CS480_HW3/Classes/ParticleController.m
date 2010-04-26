@@ -42,9 +42,11 @@
 			i--;
 		}
 	}
-	for (int j = 0; j < [trails count]; j++) {		
-		[[trails objectAtIndex:j] setSpawnCoord:sx :sy :sz];
-		[[trails objectAtIndex:j] updateAndDraw];		
+	if (!exploding) {
+		for (int j = 0; j < [trails count]; j++) {		
+			[[trails objectAtIndex:j] setSpawnCoord:sx :sy :sz];
+			[[trails objectAtIndex:j] updateAndDraw];		
+		}
 	}
 	if ([explosions count] > 0) {
 		exploding = YES;
