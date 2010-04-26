@@ -7,16 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 //@class EAGLView;
 @class MainGameView;
 //@class MainGameViewController;
 
-@interface CS480_HW3AppDelegate : NSObject <UIApplicationDelegate, UIAccelerometerDelegate> {
+@interface CS480_HW3AppDelegate : NSObject <UIApplicationDelegate, UIAccelerometerDelegate, AVAudioPlayerDelegate> {
     UIWindow *window;	
 	UIView *startupView;
 	IBOutlet UIButton *startButton;
 	IBOutlet UILabel *lblMessage;
+	
+	AVAudioPlayer *player;
 	
 	
     //EAGLView *glView;
@@ -25,6 +28,7 @@
 	UIAccelerationValue accel[3];
 	
 }
+@property (nonatomic, retain) AVAudioPlayer *player;
 
 -(IBAction) startGame;
 
@@ -34,6 +38,7 @@
 @property(nonatomic, retain) IBOutlet UIView *startupView;
 @property(nonatomic, retain) IBOutlet UIButton *startButton;
 @property(nonatomic, retain) IBOutlet UILabel *lblMessage;
+- (IBAction) play;
 
 @end
 
