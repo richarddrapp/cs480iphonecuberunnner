@@ -52,7 +52,7 @@
 		//move all of the cubes
 		currentCube.z += 0.04f;
 		//determine if any need to be deleted
-		if (currentCube.z > 0.0f) {
+		if (currentCube.z > 1.0f) {
 			NSLog(@"Removing cube");
 			[cubes removeObjectAtIndex:i];
 			[currentCube release];
