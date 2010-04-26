@@ -31,6 +31,11 @@
 		spawnTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(trySpawnCube:) userInfo:nil repeats:YES];
 		cubes = [[NSMutableArray alloc] init];
 		totalCubesSpawned = 0;
+		
+		[self trySpawnCube:nil];
+		[self trySpawnCube:nil];
+		[self trySpawnCube:nil];
+		
     }
     return self;
 }
@@ -45,7 +50,7 @@
 	for (int i=0; i<arrayCount; i++) {
 		currentCube = [cubes objectAtIndex:i];
 		//move all of the cubes
-		currentCube.z += 0.02f;
+		currentCube.z += 0.04f;
 		//determine if any need to be deleted
 		if (currentCube.z > 0.0f) {
 			NSLog(@"Removing cube");
@@ -94,7 +99,7 @@
 		totalCubesSpawned++;
 		NSLog(@"Spawning cube: %i", totalCubesSpawned);
 		Cube *newCube = [[Cube alloc] init];
-		newCube.z = -10;
+		newCube.z = -20;
 		//needs to be done on 2 seperate lines for some arbitrary reason
 		newCube.x = (arc4random() % 8);
 		newCube.x -= 4;

@@ -27,7 +27,7 @@ EAGL surface has an alpha channel.
 	EAGLContext *context;
 	
 	// OpenGL names for the renderbuffer and framebuffers used to render to this view
-	GLuint viewRenderbuffer, viewFramebuffer;
+	GLuint viewColorBuffer, viewFramebuffer;
 	
 	// OpenGL name for the depth buffer that is attached to viewFramebuffer, if it exists (0 if it does not exist)
 	GLuint depthRenderbuffer;

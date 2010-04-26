@@ -274,7 +274,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>13</integer>
+									<integer>9</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -319,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SpawnManager.m</string>
+								<string>MainGameView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SpawnManager.m</string>
+										<string>MainGameView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>5882879D118594E900986605</string>
+										<string>588287F11185A3A200986605</string>
 										<key>history</key>
 										<array>
 											<string>58A5CBC51181160B00D6BB25</string>
@@ -354,14 +354,14 @@
 											<string>5882868C118573DC00986605</string>
 											<string>5882868D118573DC00986605</string>
 											<string>588287031185812200986605</string>
-											<string>5882877F118593F600986605</string>
 											<string>58828783118593F600986605</string>
-											<string>58828784118593F600986605</string>
-											<string>58828785118593F600986605</string>
 											<string>58828794118594C200986605</string>
 											<string>58828795118594C200986605</string>
 											<string>5882879B118594E900986605</string>
-											<string>5882879C118594E900986605</string>
+											<string>588287D31185A1E900986605</string>
+											<string>588287D41185A1E900986605</string>
+											<string>588287EF1185A3A200986605</string>
+											<string>588287F01185A3A200986605</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -559,7 +559,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>5882879E118594E900986605</string>
 		<string>58828756118589F100986605</string>
 		<string>58828757118589F100986605</string>
 		<string>1CD10A99069EF8BA00B06720</string>

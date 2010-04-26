@@ -101,7 +101,7 @@ static float simVelocity = 0.1;
 	const GLfloat			matAmbient[] = {0.6, 0.6, 0.6, 1.0};
 	const GLfloat			matDiffuse[] = {1.0, 1.0, 1.0, 1.0};	
 	const GLfloat			matSpecular[] = {1.0, 1.0, 1.0, 1.0};
-	const GLfloat			lightPosition[] = {-10.0, 3.0, -1.0, 0.0}; 
+	const GLfloat			lightPosition[] = {-10.0, 3.0, 1.0, 0.0}; 
 	const GLfloat			cameraPosition[] = {0.0f, -2.0f, -3.0f};
 	const GLfloat			lightShininess = 100.0,
 							zNear = 0.1,
@@ -124,6 +124,14 @@ static float simVelocity = 0.1;
 	
 	//
 	glEnable(GL_NORMALIZE);
+	
+	//fog
+	GLfloat fogColor[] = { 0.0, 0.0, 0.0, 1.0 };
+	glEnable(GL_FOG);
+	
+	glFogfv(GL_FOG_COLOR, fogColor);
+	glFogf(GL_FOG_DENSITY, 0.1);
+	glHint(GL_FOG_HINT, GL_NICEST);
 	
 	//Set the OpenGL projection matrix
 	glMatrixMode(GL_PROJECTION);
@@ -149,7 +157,8 @@ static float simVelocity = 0.1;
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		
-	GLfloat matrix[4][4], length;
+	//GLfloat matrix[4][4]; 
+	GLfloat length;
 		
 	//Make sure we have a big enough acceleration vector
 	length = sqrtf(accel[0] * accel[0] + accel[1] * accel[1] + accel[2] * accel[2]);
@@ -226,11 +235,11 @@ static float simVelocity = 0.1;
 	player.x += simVelocity;
 #endif	
 	if(player.x > kBoundsX) {
-		player.x = kBoundsX;
+		player.x = kBoundsX - 0.01;
 		simVelocity *= -1;
 	}
 	if(player.x < -kBoundsX) {
-		player.x = -kBoundsX;
+		player.x = -kBoundsX + 0.01;
 		simVelocity *= -1;
 	}
 	
@@ -252,7 +261,7 @@ static float simVelocity = 0.1;
 	[pController setShipCoord:player.x : player.y : player.z];
 	[pController updateAndDrawAll];
 
-	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
+	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewColorBuffer);
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
 }
 
@@ -269,16 +278,16 @@ static float simVelocity = 0.1;
 
 - (BOOL)createFramebuffer
 {
-	// Generate IDs for a framebuffer object and a color renderbuffer
+	// get IDs for the framebuffer and color renderbuffer
 	glGenFramebuffersOES(1, &viewFramebuffer);
-	glGenRenderbuffersOES(1, &viewRenderbuffer);
+	glGenRenderbuffersOES(1, &viewColorBuffer);
 	
 	glBindFramebufferOES(GL_FRAMEBUFFER_OES, viewFramebuffer);
-	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
+	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewColorBuffer);
 	// This call associates the storage for the current render buffer with the EAGLDrawable (our CAEAGLLayer)
 	// allowing us to draw into a buffer that will later be rendered to screen wherever the layer is (which corresponds with our view).
 	[context renderbufferStorage:GL_RENDERBUFFER_OES fromDrawable:(id<EAGLDrawable>)self.layer];
-	glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_COLOR_ATTACHMENT0_OES, GL_RENDERBUFFER_OES, viewRenderbuffer);
+	glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_COLOR_ATTACHMENT0_OES, GL_RENDERBUFFER_OES, viewColorBuffer);
 	
 	glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_WIDTH_OES, &backingWidth);
 	glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_HEIGHT_OES, &backingHeight);
@@ -303,8 +312,8 @@ static float simVelocity = 0.1;
 {
 	glDeleteFramebuffersOES(1, &viewFramebuffer);
 	viewFramebuffer = 0;
-	glDeleteRenderbuffersOES(1, &viewRenderbuffer);
-	viewRenderbuffer = 0;
+	glDeleteRenderbuffersOES(1, &viewColorBuffer);
+	viewColorBuffer = 0;
 	
 	if(depthRenderbuffer)
 	{
