@@ -29,6 +29,6 @@
 @property bool live;
 
 -(ParticleTrail*) initAt: (float) _x : (float) _y : (float) _z : (int) _particles;
--(void) updateAndDraw;
+-(void) updateAndDraw: (float) x: (float) y: (float) z;
 
 @end
