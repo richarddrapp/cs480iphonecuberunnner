@@ -20,7 +20,6 @@
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 		2C19C6BD1185748D009E41DF /* ParticleTrail.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C19C6BC1185748D009E41DF /* ParticleTrail.m */; };
-		2C19C7D511858202009E41DF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C19C7D311858202009E41DF /* Default.png */; };
 		2C19C7D611858202009E41DF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C19C7D411858202009E41DF /* Icon.png */; };
 		2C71B70F11855F0A00E14251 /* ParticleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71B70811855F0A00E14251 /* ParticleBase.m */; };
 		2C71B71011855F0A00E14251 /* ParticleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71B70A11855F0A00E14251 /* ParticleController.m */; };
@@ -29,6 +28,7 @@
 		5814CD2E118501E30021D912 /* SpawnManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5814CD2D118501E30021D912 /* SpawnManager.m */; };
 		5867ACD01184490B009C0C9A /* MainGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */; };
 		5867AD2711844FB7009C0C9A /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = 5867AD2611844FB7009C0C9A /* Cube.m */; };
+		5882884B1185B30100986605 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5882884A1185B30100986605 /* Default.png */; };
 		58E5E370118546D00070A605 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E5E36F118546D00070A605 /* Player.m */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +53,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C19C6BB1185748D009E41DF /* ParticleTrail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleTrail.h; sourceTree = "<group>"; };
 		2C19C6BC1185748D009E41DF /* ParticleTrail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleTrail.m; sourceTree = "<group>"; };
-		2C19C7D311858202009E41DF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2C19C7D411858202009E41DF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		2C71B70711855F0A00E14251 /* ParticleBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleBase.h; sourceTree = "<group>"; };
 		2C71B70811855F0A00E14251 /* ParticleBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleBase.m; sourceTree = "<group>"; };
@@ -72,6 +71,7 @@
 		5867ACCF1184490B009C0C9A /* MainGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainGameView.m; sourceTree = "<group>"; };
 		5867AD2511844FB7009C0C9A /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
 		5867AD2611844FB7009C0C9A /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cube.m; sourceTree = "<group>"; };
+		5882884A1185B30100986605 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		58E5E36E118546D00070A605 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		58E5E36F118546D00070A605 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* CS480_HW3-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CS480_HW3-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2C19C7D311858202009E41DF /* Default.png */,
+				5882884A1185B30100986605 /* Default.png */,
 				2C19C7D411858202009E41DF /* Icon.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* CS480_HW3-Info.plist */,
@@ -260,8 +260,8 @@
 				2514C27B10084DCA00A42282 /* Shader.fsh in Resources */,
 				2514C27C10084DCA00A42282 /* Shader.vsh in Resources */,
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				2C19C7D511858202009E41DF /* Default.png in Resources */,
 				2C19C7D611858202009E41DF /* Icon.png in Resources */,
+				5882884B1185B30100986605 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,9 +26,11 @@ static float simVelocity = 0.1;
 // A class extension to declare private methods
 @interface MainGameView (private)
 
+- (void) updatePlayer;
 - (BOOL)createFramebuffer;
 - (void)destroyFramebuffer;
 - (void)setupView;
+- (void) allowPlayerRespawn:(NSTimer *) timer;
 
 @end
 
@@ -169,8 +171,32 @@ static float simVelocity = 0.1;
 	//Setup model view matrix
 	glLoadIdentity();
 	
-	//update the spawn manager and player
-	[spawnManager update];
+	//update the spawn manager
+	if([pController exploding] == NO) {
+		[spawnManager update];
+	}
+	
+	//if ship not exploding
+	if(playerIsDead == NO) {
+		[self updatePlayer];
+	}
+	
+	[spawnManager drawCubes];
+	
+	
+	// update and draw all particles
+	
+	[pController setShipCoord:player.x : player.y : player.z];
+	pController.playerDead = playerIsDead;
+	[pController updateAndDrawAll];
+
+	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewColorBuffer);
+	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
+}
+
+//
+//helper method to update the player
+- (void) updatePlayer {
 	
 	//update the player with accelerometer information
 	player.x += (float) accel[0] / 4;
@@ -186,27 +212,23 @@ static float simVelocity = 0.1;
 		simVelocity *= -1;
 	}
 	
-	//if ship not exploding
-	if([pController exploding] == NO) {
-		//test for collision
-		if ([spawnManager testPlayerCollision:player]) {
-			[pController explodeAt:player.x :player.y :player.x];
-		} else {
-			[player drawPlayer];
-		}
+	//test for collision
+	if ([spawnManager testPlayerCollision:player]) {
+		[pController explodeAt:player.x :player.y :player.z];
+		player.x = 0;
+		playerIsDead = YES;
+		[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(allowPlayerRespawn:) userInfo:nil repeats:NO];
+	} else {
+		[player drawPlayer];
 	}
 	
-	[spawnManager drawCubes];
-	
-	
-	// update and draw all particles
-	
-	[pController setShipCoord:player.x : player.y : player.z];
-	[pController updateAndDrawAll];
-
-	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewColorBuffer);
-	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
 }
+
+- (void) allowPlayerRespawn:(NSTimer *) timer {
+	playerIsDead = NO;
+}
+
+
 
 // If our view is resized, we'll be asked to layout subviews.
 // This is the perfect opportunity to also update the framebuffer so that it is

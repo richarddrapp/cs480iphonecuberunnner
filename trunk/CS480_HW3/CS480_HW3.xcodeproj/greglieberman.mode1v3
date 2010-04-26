@@ -268,6 +268,7 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>5867AD1411844D63009C0C9A</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>588285E51185603E00986605</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FABC05509CD000000102</string>
 								<string>1CC0EA4004350EF90041110B</string>
@@ -275,7 +276,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>15</integer>
+									<integer>24</integer>
 									<integer>9</integer>
 									<integer>0</integer>
 								</array>
@@ -320,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainGameView.h</string>
+								<string>MainGameView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MainGameView.h</string>
+										<string>MainGameView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>5882882E1185B1C400986605</string>
+										<string>5882888E1185BCD400986605</string>
 										<key>history</key>
 										<array>
 											<string>58A5CBC51181160B00D6BB25</string>
@@ -343,26 +344,29 @@
 											<string>5814CEA111852EB00021D912</string>
 											<string>5814CEB2118544D50021D912</string>
 											<string>58E5E39311854C680070A605</string>
-											<string>58E5E39411854C680070A605</string>
 											<string>588285F41185605200986605</string>
 											<string>588285FC118562EB00986605</string>
 											<string>5882863011856A0D00986605</string>
-											<string>588286751185726900986605</string>
 											<string>5882867F1185726900986605</string>
 											<string>5882868B118573DC00986605</string>
 											<string>5882868C118573DC00986605</string>
 											<string>5882868D118573DC00986605</string>
-											<string>58828795118594C200986605</string>
 											<string>5882879B118594E900986605</string>
 											<string>588288201185B12500986605</string>
-											<string>588288211185B12500986605</string>
-											<string>588288221185B12500986605</string>
-											<string>588288231185B12500986605</string>
-											<string>588288291185B1C400986605</string>
 											<string>5882882A1185B1C400986605</string>
 											<string>5882882B1185B1C400986605</string>
-											<string>5882882C1185B1C400986605</string>
-											<string>5882882D1185B1C400986605</string>
+											<string>588288731185BACC00986605</string>
+											<string>588288741185BACC00986605</string>
+											<string>588288751185BACC00986605</string>
+											<string>588288761185BACC00986605</string>
+											<string>588288771185BACC00986605</string>
+											<string>588288781185BACC00986605</string>
+											<string>588288791185BACC00986605</string>
+											<string>5882887A1185BACC00986605</string>
+											<string>5882887B1185BACC00986605</string>
+											<string>588288861185BC9300986605</string>
+											<string>5882888C1185BCD400986605</string>
+											<string>5882888D1185BCD400986605</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
