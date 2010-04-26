@@ -13,6 +13,7 @@
 
 @implementation ParticleController
 @synthesize exploding;
+@synthesize playerDead;
 
 -(id) init {
 	self = [super init];
@@ -22,7 +23,7 @@
 	sx = 0;
 	sy = 0;
 	sz = -5;
-	
+	playerDead = NO;
 	return self;
 }
 
@@ -42,7 +43,7 @@
 			i--;
 		}
 	}
-	if (!exploding) {
+	if (!playerDead) {
 		for (int j = 0; j < [trails count]; j++) {		
 			[[trails objectAtIndex:j] setSpawnCoord:sx :sy :sz];
 			[[trails objectAtIndex:j] updateAndDraw];		

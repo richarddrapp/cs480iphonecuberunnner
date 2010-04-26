@@ -50,6 +50,8 @@ EAGL surface has an alpha channel.
 	//Greg's Stuff
 	SpawnManager *spawnManager;
 	Player *player;
+	NSTimer *playerSpawnTimer;
+	BOOL playerIsDead;
 	
 	//Particle stuff
 	ParticleController *pController;

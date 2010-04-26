@@ -50,10 +50,10 @@
 	for (int i=0; i<arrayCount; i++) {
 		currentCube = [cubes objectAtIndex:i];
 		//move all of the cubes
-		currentCube.z += 0.04f;
+		currentCube.z += 0.05f;
 		//determine if any need to be deleted
 		if (currentCube.z > 1.0f) {
-			NSLog(@"Removing cube");
+			//NSLog(@"Removing cube");
 			[cubes removeObjectAtIndex:i];
 			[currentCube release];
 			i--;
@@ -97,7 +97,7 @@
 	
 	if ([cubes count] < kMaxCubes) {
 		totalCubesSpawned++;
-		NSLog(@"Spawning cube: %i", totalCubesSpawned);
+		//NSLog(@"Spawning cube: %i", totalCubesSpawned);
 		Cube *newCube = [[Cube alloc] init];
 		newCube.z = -20;
 		//needs to be done on 2 seperate lines for some arbitrary reason

@@ -19,9 +19,11 @@
 	float sz;
 	
 	bool exploding;
+	bool playerDead;
 }
 
 @property(readonly) bool exploding;
+@property bool playerDead;
 
 - (id) init;
 - (void) explodeAt: (float)x : (float) y : (float) z;
