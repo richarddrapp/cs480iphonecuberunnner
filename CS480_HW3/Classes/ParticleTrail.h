@@ -10,9 +10,9 @@
 
 
 @interface ParticleTrail : NSObject {
-	float x;
-	float y;
-	float z;
+	float sx;
+	float sy;
+	float sz;
 	
 	bool live;
 	
@@ -23,12 +23,13 @@
 	
 }
 
-@property float x;
-@property float y;
-@property float z;
+@property float sx;
+@property float sy;
+@property float sz;
 @property bool live;
 
 -(ParticleTrail*) initAt: (float) _x : (float) _y : (float) _z : (int) _particles;
--(void) updateAndDraw: (float) x: (float) y: (float) z;
+-(void) updateAndDraw;
+-(void) setSpawnCoord:(float)x :(float)y :(float)z;
 
 @end

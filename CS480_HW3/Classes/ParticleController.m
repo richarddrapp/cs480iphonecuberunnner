@@ -17,9 +17,10 @@
 	self = [super init];
 	
 	explosions = [[NSMutableArray alloc] init];
+	trails = [[NSMutableArray alloc] init];
 	sx = 0;
 	sy = 0;
-	sz = 0;
+	sz = -5;
 	
 	return self;
 }
@@ -41,7 +42,8 @@
 		}
 	}
 	for (int i = 0; i < [trails count]; i++) {
-		[[trails objectAtIndex:i] updateAndDraw: sx: sy: sz];
+		[[trails objectAtIndex:i] setShipCoord:sx :sy :sz];
+		[[trails objectAtIndex:i] updateAndDraw];
 	}
 }
 

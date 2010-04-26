@@ -14,9 +14,9 @@
 	NSMutableArray *explosions;
 	NSMutableArray *trails;
 	
-	int sx;
-	int sy;
-	int sz;
+	float sx;
+	float sy;
+	float sz;
 }
 
 - (id) init;
