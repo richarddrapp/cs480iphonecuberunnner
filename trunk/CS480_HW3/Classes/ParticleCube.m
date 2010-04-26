@@ -93,6 +93,10 @@ static const float cubeVertices[] = {
 	z += zSpeed;
 	
 	life--;
+	
+	if (life < 0) {
+		visible = NO;
+	}
 }
 
 - (void) drawParticle {

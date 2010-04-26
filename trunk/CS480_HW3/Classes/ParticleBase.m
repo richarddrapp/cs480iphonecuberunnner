@@ -39,6 +39,16 @@
 	for (int i = 0; i < particles; i++) {
 		[[parts objectAtIndex:i] updateParticle];
 		[[parts objectAtIndex:i] drawParticle];
+		if ([[parts objectAtIndex:i] visible] == NO) {
+			[[parts objectAtIndex:i] release];
+			[parts removeObjectAtIndex:i];
+			i--;
+			particles--;
+		}
+	}
+	if (particles < 1) {
+		live = NO;
+		NSLog(@"Live Set to NO");
 	}
 }
 
