@@ -16,6 +16,9 @@ EAGL surface has an alpha channel.
 
 // CONSTANTS
 #define kTeapotScale				3.0
+//player bounds
+#define kBoundsX					3.5
+static float simVelocity = 0.1;
 
 // MACROS
 #define DEGREES_TO_RADIANS(__ANGLE__) ((__ANGLE__) / 180.0 * M_PI)
@@ -119,12 +122,7 @@ EAGL surface has an alpha channel.
 	glShadeModel(GL_SMOOTH);
 	glEnable(GL_DEPTH_TEST);
 	
-	
-	//Configure OpenGL arrays
-	//glEnableClientState(GL_VERTEX_ARRAY);
-	//glEnableClientState(GL_NORMAL_ARRAY);
-	//glVertexPointer(3 ,GL_FLOAT, 0, teapot_vertices);
-	//glNormalPointer(GL_FLOAT, 0, teapot_normals);
+	//
 	glEnable(GL_NORMALIZE);
 	
 	//Set the OpenGL projection matrix
@@ -225,11 +223,16 @@ EAGL surface has an alpha channel.
 	
 	//update the player with accelerometer information
 	player.x += (float) accel[0] / 4;
-	if(player.x > 3) {
-		player.x = 3;
+#if TARGET_IPHONE_SIMULATOR
+	player.x += simVelocity;
+#endif	
+	if(player.x > kBoundsX) {
+		player.x = kBoundsX;
+		simVelocity *= -1;
 	}
-	if(player.x < -3) {
-		player.x = -3;
+	if(player.x < -kBoundsX) {
+		player.x = -kBoundsX;
+		simVelocity *= -1;
 	}
 
 	//draw the player
@@ -239,7 +242,7 @@ EAGL surface has an alpha channel.
 	
 	// update and draw all particles
 	
-	[pController updateAndDraw];
+	[pController updateAndDrawAll];
 
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
