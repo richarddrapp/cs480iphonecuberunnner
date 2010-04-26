@@ -88,12 +88,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2C71B70711855F0A00E14251 /* ParticleBase.h */,
-				2C71B70811855F0A00E14251 /* ParticleBase.m */,
-				2C71B70911855F0A00E14251 /* ParticleController.h */,
-				2C71B70A11855F0A00E14251 /* ParticleController.m */,
-				2C71B70B11855F0A00E14251 /* ParticleCube.h */,
-				2C71B70C11855F0A00E14251 /* ParticleCube.m */,
+				588285E51185603E00986605 /* Particles */,
 				2C71B70D11855F0A00E14251 /* Ship.h */,
 				2C71B70E11855F0A00E14251 /* Ship.m */,
 				5814CD2C118501E30021D912 /* SpawnManager.h */,
@@ -194,6 +189,19 @@
 			);
 			name = "Unused Classes";
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		588285E51185603E00986605 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				2C71B70711855F0A00E14251 /* ParticleBase.h */,
+				2C71B70811855F0A00E14251 /* ParticleBase.m */,
+				2C71B70911855F0A00E14251 /* ParticleController.h */,
+				2C71B70A11855F0A00E14251 /* ParticleController.m */,
+				2C71B70B11855F0A00E14251 /* ParticleCube.h */,
+				2C71B70C11855F0A00E14251 /* ParticleCube.m */,
+			);
+			name = Particles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
