@@ -10,7 +10,7 @@
 #import <OpenGLES/ES1/gl.h>
 #import <OpenGLES/ES1/glext.h>
 
-@interface Cube : NSObject {
+@interface Ship : NSObject {
 	//x, y, z properties don't do anything right now
 	//to make them work
 	//the cube needs to store it's own worldTransform matrix
@@ -31,7 +31,7 @@
 @property float z;
 @property float scale;
 
-- (void) drawCube;
+- (void) drawShip;
 
 
 @end
