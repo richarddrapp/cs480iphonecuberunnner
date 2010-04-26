@@ -13,7 +13,6 @@ EAGL surface has an alpha channel.
 
 #import "MainGameView.h"
 #import "teapot.h"
-#import "CubeModel.h"
 
 // CONSTANTS
 #define kTeapotScale				3.0
@@ -78,6 +77,9 @@ EAGL surface has an alpha channel.
 		
 		//Greg stuff
 		spawnManager = [[SpawnManager alloc] init];
+		player = [[Player alloc] init];
+		player.y = 2;
+		player.z = -5;
 			
 		[self setupView];
 	}
@@ -112,14 +114,15 @@ EAGL surface has an alpha channel.
 	glLightfv(GL_LIGHT0, GL_POSITION, lightPosition); 			
 	glShadeModel(GL_SMOOTH);
 	glEnable(GL_DEPTH_TEST);
-		
+	
+	
 	//Configure OpenGL arrays
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glEnableClientState(GL_NORMAL_ARRAY);
 	glVertexPointer(3 ,GL_FLOAT, 0, teapot_vertices);
 	glNormalPointer(GL_FLOAT, 0, teapot_normals);
 	glEnable(GL_NORMALIZE);
-
+	
 	//Set the OpenGL projection matrix
 	glMatrixMode(GL_PROJECTION);
 	size = zNear * tanf(DEGREES_TO_RADIANS(fieldOfView) / 2.0);
@@ -214,6 +217,9 @@ EAGL surface has an alpha channel.
 	//the spawn manager has seperate calls for both update and draw
 	[spawnManager update];
 	[spawnManager drawCubes];
+	
+	//draw the player
+	[player drawPlayer];
 	
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];

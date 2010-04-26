@@ -22,6 +22,7 @@
 		5814CD2E118501E30021D912 /* SpawnManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5814CD2D118501E30021D912 /* SpawnManager.m */; };
 		5867ACD01184490B009C0C9A /* MainGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */; };
 		5867AD2711844FB7009C0C9A /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = 5867AD2611844FB7009C0C9A /* Cube.m */; };
+		58E5E370118546D00070A605 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E5E36F118546D00070A605 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		5867ACCF1184490B009C0C9A /* MainGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainGameView.m; sourceTree = "<group>"; };
 		5867AD2511844FB7009C0C9A /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
 		5867AD2611844FB7009C0C9A /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cube.m; sourceTree = "<group>"; };
+		58E5E36E118546D00070A605 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		58E5E36F118546D00070A605 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* CS480_HW3-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CS480_HW3-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +82,8 @@
 				5867ACCF1184490B009C0C9A /* MainGameView.m */,
 				5867AD2511844FB7009C0C9A /* Cube.h */,
 				5867AD2611844FB7009C0C9A /* Cube.m */,
+				58E5E36E118546D00070A605 /* Player.h */,
+				58E5E36F118546D00070A605 /* Player.m */,
 				1D3623240D0F684500981E51 /* CS480_HW3AppDelegate.h */,
 				1D3623250D0F684500981E51 /* CS480_HW3AppDelegate.m */,
 			);
@@ -234,6 +239,7 @@
 				5867ACD01184490B009C0C9A /* MainGameView.m in Sources */,
 				5867AD2711844FB7009C0C9A /* Cube.m in Sources */,
 				5814CD2E118501E30021D912 /* SpawnManager.m in Sources */,
+				58E5E370118546D00070A605 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
