@@ -14,6 +14,7 @@ EAGL surface has an alpha channel.
 #import <OpenGLES/ES1/glext.h>
 #import "Cube.h"
 #import "SpawnManager.h"
+#import "Player.h"
 
 @interface MainGameView : UIView
 {
@@ -45,6 +46,7 @@ EAGL surface has an alpha channel.
 	
 	//Greg's Stuff
 	SpawnManager *spawnManager;
+	Player *player;
 	
 }
 
