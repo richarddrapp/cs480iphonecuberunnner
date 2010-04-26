@@ -11,17 +11,17 @@
 
 
 @implementation ParticleTrail
-@synthesize x;
-@synthesize y;
-@synthesize z;
+@synthesize sx;
+@synthesize sy;
+@synthesize sz;
 @synthesize live;
 
 
 - (ParticleTrail*) initAt:(float)_x :(float)_y :(float)_z :(int)_particles {
 	self = [super init];
-	x = _x;
-	y = _y;
-	z = _z;
+	sx = _x;
+	sy = _y;
+	sz = _z;
 	
 	live = YES;
 	
@@ -36,13 +36,9 @@
 	return self;
 }
 
--(void) updateAndDraw: (float) _x: (float) _y: (float) _z {
-	x = _x;
-	y = _y;
-	x = _z;
-
+-(void) updateAndDraw {
 	if ([unallocParts count] > 0) {
-		[[parts objectAtIndex:0] allocate:x :y :z :.5f :10];
+		[[parts objectAtIndex:0] allocate:sx :sy :sz :.5f :10];
 		[parts addObject: [unallocParts objectAtIndex:0]];
 		[unallocParts removeObjectAtIndex:0];
 	}
@@ -57,6 +53,12 @@
 	if (particles < 1) {
 		live = NO;
 	}
+}
+
+-(void) setSpawnCoord: (float) x: (float) y: (float) z {
+	sx = x;
+	sy = y;
+	sz = z;
 }
 
 
