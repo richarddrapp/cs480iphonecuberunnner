@@ -30,6 +30,8 @@
 		5867AD2711844FB7009C0C9A /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = 5867AD2611844FB7009C0C9A /* Cube.m */; };
 		5882884B1185B30100986605 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5882884A1185B30100986605 /* Default.png */; };
 		58E5E370118546D00070A605 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E5E36F118546D00070A605 /* Player.m */; };
+		9232694A1185C2E100F219F7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923269491185C2E100F219F7 /* AVFoundation.framework */; };
+		9232696D1185C46E00F219F7 /* themeSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9232696C1185C46E00F219F7 /* themeSong.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,8 @@
 		58E5E36E118546D00070A605 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		58E5E36F118546D00070A605 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* CS480_HW3-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CS480_HW3-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		923269491185C2E100F219F7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9232696C1185C46E00F219F7 /* themeSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = themeSong.mp3; path = ../../Desktop/themeSong.mp3; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */,
 				28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */,
+				9232694A1185C2E100F219F7 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +161,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9232696C1185C46E00F219F7 /* themeSong.mp3 */,
 				5882884A1185B30100986605 /* Default.png */,
 				2C19C7D411858202009E41DF /* Icon.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
@@ -171,6 +177,7 @@
 				28FD14FF0DC6FC520079059D /* OpenGLES.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				923269491185C2E100F219F7 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,6 +269,7 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2C19C7D611858202009E41DF /* Icon.png in Resources */,
 				5882884B1185B30100986605 /* Default.png in Resources */,
+				9232696D1185C46E00F219F7 /* themeSong.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
