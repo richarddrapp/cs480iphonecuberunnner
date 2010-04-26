@@ -11,4 +11,22 @@
 
 @implementation ParticleController
 
+-(id) init {
+	self = [super init];
+	
+	explosions = [[NSMutableArray alloc] init];
+	
+	return self;
+}
+
+-(void) explodeAt:(int)x :(int)y :(int)z {
+	[explosions addObject:[[ParticleBase alloc] initAt:x :y :z :50]];
+}
+
+-(void) updateAndDraw {
+	for (int i = 0; i < [explosions count]; i++) {
+		[[explosions objectAtIndex:i] updateAndDraw];
+	}
+}
+
 @end

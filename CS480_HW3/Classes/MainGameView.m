@@ -80,6 +80,9 @@ EAGL surface has an alpha channel.
 		player = [[Player alloc] init];
 		player.y = 2;
 		player.z = -5;
+		
+		// initialize the particle controller
+		pController = [[ParticleController alloc] init];
 			
 		[self setupView];
 	}
@@ -220,6 +223,11 @@ EAGL surface has an alpha channel.
 	
 	//draw the player
 	[player drawPlayer];
+	
+	
+	
+	// update and draw all particles
+	[pController updateAndDraw];
 	
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];

@@ -15,6 +15,7 @@ EAGL surface has an alpha channel.
 #import "Cube.h"
 #import "SpawnManager.h"
 #import "Player.h"
+#import "ParticleController.h"
 
 @interface MainGameView : UIView
 {
@@ -48,6 +49,8 @@ EAGL surface has an alpha channel.
 	SpawnManager *spawnManager;
 	Player *player;
 	
+	//Particle stuff
+	ParticleController *pController;
 }
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
