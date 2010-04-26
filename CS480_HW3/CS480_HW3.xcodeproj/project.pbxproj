@@ -19,6 +19,8 @@
 		28FD14FE0DC6FC130079059D /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */; };
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		2C84E98B11850429002A9BF4 /* ParticleCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C84E98A11850429002A9BF4 /* ParticleCube.m */; };
+		2C84E9D8118512FD002A9BF4 /* ParticleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C84E9D7118512FD002A9BF4 /* ParticleBase.m */; };
 		5867ACD01184490B009C0C9A /* MainGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */; };
 		5867AD2711844FB7009C0C9A /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = 5867AD2611844FB7009C0C9A /* Cube.m */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,10 @@
 		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C84E98911850429002A9BF4 /* ParticleCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleCube.h; sourceTree = "<group>"; };
+		2C84E98A11850429002A9BF4 /* ParticleCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleCube.m; sourceTree = "<group>"; };
+		2C84E9D6118512FD002A9BF4 /* ParticleBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleBase.h; sourceTree = "<group>"; };
+		2C84E9D7118512FD002A9BF4 /* ParticleBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleBase.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* CS480_HW3_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CS480_HW3_Prefix.pch; sourceTree = "<group>"; };
 		5867ACCB11844659009C0C9A /* teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = teapot.h; path = ../teapot.h; sourceTree = "<group>"; };
 		5867ACCC11844659009C0C9A /* CubeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CubeModel.h; path = ../CubeModel.h; sourceTree = "<group>"; };
@@ -70,6 +76,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2C84E988118503E8002A9BF4 /* Particles */,
 				5867ACCE1184490B009C0C9A /* MainGameView.h */,
 				5867ACCF1184490B009C0C9A /* MainGameView.m */,
 				5867AD2511844FB7009C0C9A /* Cube.h */,
@@ -139,6 +146,17 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C84E988118503E8002A9BF4 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				2C84E98911850429002A9BF4 /* ParticleCube.h */,
+				2C84E98A11850429002A9BF4 /* ParticleCube.m */,
+				2C84E9D6118512FD002A9BF4 /* ParticleBase.h */,
+				2C84E9D7118512FD002A9BF4 /* ParticleBase.m */,
+			);
+			name = Particles;
 			sourceTree = "<group>";
 		};
 		5867ACB81184460B009C0C9A /* Models */ = {
@@ -228,6 +246,8 @@
 				2514C27310084DB100A42282 /* ES2Renderer.m in Sources */,
 				5867ACD01184490B009C0C9A /* MainGameView.m in Sources */,
 				5867AD2711844FB7009C0C9A /* Cube.m in Sources */,
+				2C84E98B11850429002A9BF4 /* ParticleCube.m in Sources */,
+				2C84E9D8118512FD002A9BF4 /* ParticleBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
