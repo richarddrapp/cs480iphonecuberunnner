@@ -80,18 +80,9 @@ static const float cubeVertices[] = {
 	int angleVert = arc4random() % 180;
 	int angleRot = arc4random() % 360;
 	
-	NSLog(@"vang: %i", angleVert);
-	NSLog(@"rang: %i", angleRot);
-	
-	
 	xSpeed = _speed * sin( angleVert ) * cos( angleRot );
 	ySpeed = _speed * cos( angleVert );
 	zSpeed = _speed * sin( angleVert ) * sin( angleRot );
-	
-	NSLog(@"xspeed: %i", xSpeed);
-	NSLog(@"yspeed: %i", ySpeed);
-	NSLog(@"zspeed: %i", zSpeed);
-	
 	
 	visible = YES;
 }
