@@ -85,8 +85,8 @@
 	
 	//Sound stuff
 	NSString *soundFilePath =
-	[[NSBundle mainBundle] pathForResource: @"music"
-									ofType: @"wav" inDirectory: @"/"];
+	[[NSBundle mainBundle] pathForResource: @"themeSong"
+									ofType: @"mp3" inDirectory: @"/"];
 	
 	NSURL *fileURL = [[NSURL alloc] initFileURLWithPath: soundFilePath];
 	
