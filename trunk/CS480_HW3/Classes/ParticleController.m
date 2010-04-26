@@ -32,7 +32,7 @@
 	[trails addObject:[[ParticleTrail alloc] initAt:x :y :z :50]];
 }
 
--(void) updateAndDraw {
+-(void) updateAndDrawAll {
 	for (int i = 0; i < [explosions count]; i++) {
 		[[explosions objectAtIndex:i] updateAndDraw];
 		if ([[explosions objectAtIndex:i] live] == NO) {
@@ -41,9 +41,9 @@
 			i--;
 		}
 	}
-	for (int i = 0; i < [trails count]; i++) {
-		[[trails objectAtIndex:i] setShipCoord:sx :sy :sz];
-		[[trails objectAtIndex:i] updateAndDraw];
+	for (int j = 0; j < [trails count]; j++) {		
+		[[trails objectAtIndex:j] setSpawnCoord:sx :sy :sz];
+		[[trails objectAtIndex:j] updateAndDraw];		
 	}
 }
 

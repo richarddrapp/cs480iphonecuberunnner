@@ -28,31 +28,26 @@
 	particles = _particles;
 	
 	parts = [[NSMutableArray alloc] init];
-	unallocParts = [[NSMutableArray alloc] init];
+	
+	count = 0;
 	
 	for (int i = 0; i < particles; i++) {
-		[unallocParts addObject: [[ParticleCube alloc] init]];
+		[parts addObject: [[ParticleCube alloc] init]];
 	}
+	
 	return self;
 }
 
 -(void) updateAndDraw {
-	if ([unallocParts count] > 0) {
-		[[parts objectAtIndex:0] allocate:sx :sy :sz :.5f :10];
-		[parts addObject: [unallocParts objectAtIndex:0]];
-		[unallocParts removeObjectAtIndex:0];
-	}
+	[[parts objectAtIndex:(count%particles)] allocate:sx :sy :sz :.5f :10];
 	for (int i = 0; i < particles; i++) {
 		[[parts objectAtIndex:i] updateParticle];
 		[[parts objectAtIndex:i] drawParticle];
-		if ([[parts objectAtIndex:i] visible] == NO) {
-			[unallocParts addObject: [parts objectAtIndex:i]];
-			[parts removeObjectAtIndex:i];
-		}
 	}
 	if (particles < 1) {
 		live = NO;
 	}
+	count++;
 }
 
 -(void) setSpawnCoord: (float) x: (float) y: (float) z {
