@@ -101,6 +101,7 @@
 		// quick size hack
 		const float bulletSize = 0.01;
 		if (diffX < bulletSize + c.width/2 && diffY < bulletSize + c.height/2 && diffZ < bulletSize + c.depth/2) {
+			bullet.life = 0;
 			[cubes removeObjectAtIndex:i];
 			[c release];
 			i--;
