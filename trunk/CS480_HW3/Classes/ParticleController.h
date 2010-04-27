@@ -13,6 +13,8 @@
 @interface ParticleController : NSObject {
 	NSMutableArray *explosions;
 	NSMutableArray *trails;
+	NSMutableArray *cannons;
+	
 	
 	float sx;
 	float sy;
@@ -30,5 +32,6 @@
 - (void) trailAt: (float)x : (float) y : (float) z;
 - (void) updateAndDrawAll;
 - (void) setShipCoord: (float)x : (float) y : (float) z;
+- (void) shoot;
 
 @end

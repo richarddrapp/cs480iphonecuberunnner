@@ -81,6 +81,8 @@
 	[glView setAccel:accel];
 }
 
+
+
 - (IBAction)startGame{
 	
 	//Sound stuff
