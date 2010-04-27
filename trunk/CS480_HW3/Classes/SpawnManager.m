@@ -8,6 +8,7 @@
 
 #import "SpawnManager.h"
 #import "Player.h"
+#import "ParticleCube.h"
 
 // A class extension to declare private methods
 @interface SpawnManager (private)
@@ -83,6 +84,26 @@
 		float diffZ = fabs(player.z - c.z);
 		if (diffX < player.width/2 + c.width/2 && diffY < player.height/2 + c.height/2 && diffZ < player.depth/2 + c.depth/2) {
 			return YES;
+		}
+	}
+	return NO;
+}
+
+//test if the bullet collided with any cubes
+- (BOOL) testBulletCollision:(ParticleCube *) bullet  {
+	Cube *c;
+	int arrayCount = [cubes count];
+	for (int i=0; i<arrayCount; i++) {
+		c = [cubes objectAtIndex:i];
+		float diffX = fabs(bullet.x - c.x);
+		float diffY = fabs(bullet.y - c.y);
+		float diffZ = fabs(bullet.z - c.z);
+		// quick size hack
+		const float bulletSize = 0.1;
+		if (diffX < bulletSize + c.width/2 && diffY < bulletSize + c.height/2 && diffZ < bulletSize + c.depth/2) {
+			[cubes removeObjectAtIndex:i];
+			[c release];
+			i--;
 		}
 	}
 	return NO;

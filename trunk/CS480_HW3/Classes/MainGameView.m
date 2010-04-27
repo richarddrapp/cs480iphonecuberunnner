@@ -181,6 +181,11 @@ static float simVelocity = 0.1;
 		[self updatePlayer];
 	}
 	
+	NSMutableArray *bullets = [pController getAllShots];
+	for(int k = 0; k < [bullets count]; k++) {
+		[spawnManager testBulletCollision:[bullets objectAtIndex:k]];
+	}
+	
 	[spawnManager drawCubes];
 	
 	
