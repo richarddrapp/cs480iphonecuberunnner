@@ -16,6 +16,7 @@
 @synthesize y;
 @synthesize z;
 @synthesize visible;
+@synthesize life;
 
 //static variable of the cube model
 static const float exCubeVertices[] = {

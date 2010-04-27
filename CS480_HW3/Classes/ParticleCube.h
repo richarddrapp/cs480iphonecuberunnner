@@ -39,6 +39,7 @@
 @property float x;
 @property float y;
 @property float z;
+@property int life;
 
 @property bool visible;
 
