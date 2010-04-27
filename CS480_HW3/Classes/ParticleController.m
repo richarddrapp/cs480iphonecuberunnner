@@ -74,7 +74,7 @@
 }
 
 -(NSMutableArray*) getAllShots {
-	return [[cannons objectAtIndex:i] getShots];
+	return [[cannons objectAtIndex:0] getShots];
 }
 
 @end

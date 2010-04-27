@@ -12,6 +12,7 @@
 
 #import "Cube.h";
 #import <Foundation/Foundation.h>
+#import "ParticleCube.h"
 
 #define kMaxCubes	10
 
@@ -26,5 +27,6 @@
 - (void) update;
 - (void) drawCubes;
 - (BOOL) testPlayerCollision:(Player *) player;
+- (BOOL) testBulletCollision:(ParticleCube *) bullet;
 
 @end
