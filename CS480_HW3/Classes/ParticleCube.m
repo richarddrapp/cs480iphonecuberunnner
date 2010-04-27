@@ -168,6 +168,35 @@ static const float tCubeVertices[] = {
 	_material[2] = 0.0f;
 }
 
+- (void) allocateShot:(float)_x :(float)_y :(float)_z :(float)_speed :(int)_life {
+	x = _x;
+	y = _y;
+	z = _z;
+	
+	life = _life;
+	maxLife = _life;
+	
+	type = 3;
+	
+	int angleVert = arc4random() % 20;
+	int angleRot = arc4random() % 360;
+	angleVert = 90;
+	angleRot = 90;
+	
+	xSpeed = _speed * sin( [self dtr: angleVert] ) * cos( [self dtr: angleRot] );
+	ySpeed = _speed * cos( [self dtr: angleVert] );
+	zSpeed = _speed * sin( [self dtr: angleVert] ) * sin( [self dtr: angleRot] );
+	
+	visible = YES;
+	
+	_material[0] = 0.8f;
+	_material[1] = 0.8f;
+	_material[2] = 0.0f;
+	
+	NSLog(@"allocate");
+}
+
+
 - (void) updateParticle {
 	x += xSpeed;
 	y += ySpeed;

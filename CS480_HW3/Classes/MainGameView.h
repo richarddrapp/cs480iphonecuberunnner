@@ -66,5 +66,6 @@ EAGL surface has an alpha channel.
 -(void)startAnimation;
 -(void)stopAnimation;
 -(void)drawView;
+-(void)shoot;
 
 @end

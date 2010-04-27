@@ -224,6 +224,22 @@ static float simVelocity = 0.1;
 	
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	[pController shoot];
+	NSLog(@"Touch!");
+}
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+}
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+}
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+}
+
+- (void) shoot {
+	NSLog(@"Shoot called from app!");
+	[pController shoot];
+}
+
 - (void) allowPlayerRespawn:(NSTimer *) timer {
 	playerIsDead = NO;
 }
