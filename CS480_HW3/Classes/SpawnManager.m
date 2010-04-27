@@ -99,7 +99,7 @@
 		float diffY = fabs(bullet.y - c.y);
 		float diffZ = fabs(bullet.z - c.z);
 		// quick size hack
-		const float bulletSize = 0.1;
+		const float bulletSize = 0.01;
 		if (diffX < bulletSize + c.width/2 && diffY < bulletSize + c.height/2 && diffZ < bulletSize + c.depth/2) {
 			[cubes removeObjectAtIndex:i];
 			[c release];

@@ -206,6 +206,11 @@
 			58B878211186937600C722D4 /* PBXTextBookmark */ = 58B878211186937600C722D4 /* PBXTextBookmark */;
 			58B878221186937600C722D4 /* XCBuildMessageTextBookmark */ = 58B878221186937600C722D4 /* XCBuildMessageTextBookmark */;
 			58B878231186937600C722D4 /* PBXTextBookmark */ = 58B878231186937600C722D4 /* PBXTextBookmark */;
+			58B8783A1186951800C722D4 /* PBXTextBookmark */ = 58B8783A1186951800C722D4 /* PBXTextBookmark */;
+			58B8783B1186951800C722D4 /* PBXTextBookmark */ = 58B8783B1186951800C722D4 /* PBXTextBookmark */;
+			58B8783C1186951800C722D4 /* PBXTextBookmark */ = 58B8783C1186951800C722D4 /* PBXTextBookmark */;
+			58B8783D1186951800C722D4 /* PBXTextBookmark */ = 58B8783D1186951800C722D4 /* PBXTextBookmark */;
+			58B8783E1186951800C722D4 /* PBXTextBookmark */ = 58B8783E1186951800C722D4 /* PBXTextBookmark */;
 			58E5E39311854C680070A605 = 58E5E39311854C680070A605 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 587EC6DB11810FAB00803532 /* Source Control */;
@@ -264,17 +269,17 @@
 	};
 	5814CD2C118501E30021D912 /* SpawnManager.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1161, 495}}";
-			sepNavSelRange = "{598, 0}";
-			sepNavVisRange = "{0, 605}";
+			sepNavIntBoundsRect = "{{0, 0}, {1161, 472}}";
+			sepNavSelRange = "{335, 0}";
+			sepNavVisRange = "{0, 630}";
 			sepNavWindowFrame = "{{15, 66}, {783, 807}}";
 		};
 	};
 	5814CD2D118501E30021D912 /* SpawnManager.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1161, 1890}}";
-			sepNavSelRange = "{1931, 56}";
-			sepNavVisRange = "{1868, 885}";
+			sepNavIntBoundsRect = "{{0, 0}, {1161, 1778}}";
+			sepNavSelRange = "{2262, 0}";
+			sepNavVisRange = "{1868, 828}";
 		};
 	};
 	5814CE8E11852DF40021D912 /* greglieberman.pbxuser */ = {
@@ -336,8 +341,8 @@
 	};
 	5867ACCF1184490B009C0C9A /* MainGameView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1161, 5628}}";
-			sepNavSelRange = "{5322, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1161, 5670}}";
+			sepNavSelRange = "{5158, 0}";
 			sepNavVisRange = "{4802, 847}";
 		};
 	};
@@ -396,7 +401,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -623,7 +628,7 @@
 		fRef = 5814CD2C118501E30021D912 /* SpawnManager.h */;
 		name = "SpawnManager.h: 22";
 		rLen = 20;
-		rLoc = 412;
+		rLoc = 437;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 0;
@@ -770,12 +775,60 @@
 		delayBeforeContinue = 0;
 		fileReference = 5814CD2D118501E30021D912 /* SpawnManager.m */;
 		functionName = "-testBulletCollision:";
-		hitCount = 0;
+		hitCount = 1;
 		ignoreCount = 0;
 		lineNumber = 104;
-		modificationTime = 294032434.831893;
-		originalNumberOfMultipleMatches = 0;
+		location = CS480_HW3;
+		modificationTime = 294032560.484158;
+		originalNumberOfMultipleMatches = 1;
 		state = 1;
+	};
+	58B8783A1186951800C722D4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2C71B70A11855F0A00E14251 /* ParticleController.m */;
+		name = "ParticleController.m: 77";
+		rLen = 0;
+		rLoc = 1805;
+		rType = 0;
+		vrLen = 823;
+		vrLoc = 1003;
+	};
+	58B8783B1186951800C722D4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5867ACCF1184490B009C0C9A /* MainGameView.m */;
+		name = "MainGameView.m: 182";
+		rLen = 0;
+		rLoc = 5158;
+		rType = 0;
+		vrLen = 847;
+		vrLoc = 4802;
+	};
+	58B8783C1186951800C722D4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5814CD2C118501E30021D912 /* SpawnManager.h */;
+		name = "SpawnManager.h: 15";
+		rLen = 0;
+		rLoc = 335;
+		rType = 0;
+		vrLen = 630;
+		vrLoc = 0;
+	};
+	58B8783D1186951800C722D4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5814CD2D118501E30021D912 /* SpawnManager.m */;
+		rLen = 0;
+		rLoc = 103;
+		rType = 1;
+	};
+	58B8783E1186951800C722D4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5814CD2D118501E30021D912 /* SpawnManager.m */;
+		name = "SpawnManager.m: 102";
+		rLen = 0;
+		rLoc = 2262;
+		rType = 0;
+		vrLen = 828;
+		vrLoc = 1868;
 	};
 	58E5E36E118546D00070A605 /* Player.h */ = {
 		uiCtxt = {
