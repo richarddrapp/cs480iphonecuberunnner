@@ -319,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ParticleController.m</string>
+								<string>SpawnManager.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ParticleController.m</string>
+										<string>SpawnManager.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>58B878231186937600C722D4</string>
+										<string>58B8783E1186951800C722D4</string>
 										<key>history</key>
 										<array>
 											<string>58A5CBC51181160B00D6BB25</string>
@@ -360,12 +360,12 @@
 											<string>588288771185BACC00986605</string>
 											<string>588288781185BACC00986605</string>
 											<string>588288791185BACC00986605</string>
-											<string>5882887A1185BACC00986605</string>
 											<string>5881157A11867A2C00B9B247</string>
 											<string>58B8781F1186937600C722D4</string>
-											<string>58B878201186937600C722D4</string>
-											<string>58B878211186937600C722D4</string>
-											<string>58B878221186937600C722D4</string>
+											<string>58B8783A1186951800C722D4</string>
+											<string>58B8783B1186951800C722D4</string>
+											<string>58B8783C1186951800C722D4</string>
+											<string>58B8783D1186951800C722D4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -563,6 +563,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>58B8783F1186951800C722D4</string>
+		<string>58B878401186951800C722D4</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>587EC6D911810FAB00803532</string>
