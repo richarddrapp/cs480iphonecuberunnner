@@ -34,6 +34,7 @@
 -(void) updateAndDraw;
 -(void) setSpawnCoord:(float)x :(float)y :(float)z;
 -(void) shoot;
+-(NSMutableArray*) getShots;
 
 
 @end
