@@ -73,4 +73,8 @@
 	sz = z;
 }
 
+-(NSMutableArray*) getAllShots {
+	return [[cannons objectAtIndex:i] getShots];
+}
+
 @end

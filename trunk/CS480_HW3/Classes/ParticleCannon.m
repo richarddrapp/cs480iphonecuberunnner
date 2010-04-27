@@ -65,6 +65,10 @@
 	sz = z;
 }
 
+-(NSMutableArray*) getShots {
+	return shots;
+}
+
 -(void) shoot {
 	if ([unallocShots count] > 0) {
 		[[unallocShots objectAtIndex:0] allocateShot:sx :sy :sz :-.5 :50];

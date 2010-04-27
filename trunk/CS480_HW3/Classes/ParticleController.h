@@ -33,5 +33,6 @@
 - (void) updateAndDrawAll;
 - (void) setShipCoord: (float)x : (float) y : (float) z;
 - (void) shoot;
+-(NSMutableArray*) getAllShots;
 
 @end
